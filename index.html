@@ -1,290 +1,379 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Mackdonald Dulo | Profile, Education & Achievements</title>
+    <title>Sayor Senior | Personal Profile</title>
 
-<meta name="description" content="Personal profile of Mackdonald Dulo from Mombasa, Kenya, including education, mathematics contest achievement, interests and social profile.">
-<meta name="author" content="Mackdonald Dulo">
-<meta name="robots" content="index, follow">
+    <meta name="description" content="Official personal profile of Sayor Senior. Learn about his biography, personal information, family, and background.">
 
-<!-- Structured information for search engines -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Mackdonald Dulo",
-  "birthDate": "2007-03-26",
-  "birthPlace": {
-    "@type": "Place",
-    "name": "Kenya"
-  },
-  "homeLocation": {
-    "@type": "Place",
-    "name": "Mombasa, Kenya"
-  },
-  "alumniOf": [
-    {
-      "@type": "EducationalOrganization",
-      "name": "Linet Primary School"
-    },
-    {
-      "@type": "EducationalOrganization",
-      "name": "Kenyatta High School"
-    }
-  ],
-  "sameAs": [
-    "https://www.instagram.com/sayor.snr/"
-  ],
-  "knowsAbout": [
-    "Football",
-    "Mathematics",
-    "Education"
-  ]
-}
-</script>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-<style>
-* {
-  box-sizing: border-box;
-}
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f6f8;
+            color: #202124;
+            line-height: 1.6;
+        }
 
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f5f7fa;
-  color: #172033;
-  line-height: 1.65;
-}
+        /* HEADER */
+        header {
+            background: linear-gradient(135deg, #1a73e8, #4285f4);
+            color: white;
+            padding: 45px 20px;
+            text-align: center;
+        }
 
-.hero {
-  background: linear-gradient(135deg, #101828, #344054);
-  color: white;
-  padding: 75px 20px 65px;
-  text-align: center;
-}
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 8px;
+        }
 
-.hero h1 {
-  margin: 0 0 10px;
-  font-size: clamp(34px, 6vw, 58px);
-}
+        header p {
+            font-size: 18px;
+            opacity: 0.95;
+        }
 
-.hero p {
-  margin: 0;
-  font-size: 19px;
-  opacity: 0.92;
-}
+        /* MAIN CONTAINER */
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
 
-.container {
-  max-width: 920px;
-  margin: 35px auto;
-  padding: 0 20px;
-}
+        /* PROFILE CARD */
+        .profile-card {
+            background: white;
+            border-radius: 18px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            margin-bottom: 25px;
+        }
 
-.card {
-  background: white;
-  margin-bottom: 22px;
-  padding: 30px;
-  border-radius: 18px;
-  box-shadow: 0 6px 24px rgba(16, 24, 40, 0.08);
-}
+        .profile-top {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
 
-.intro {
-  text-align: center;
-}
+        /* PHOTO PLACEHOLDER */
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background: #e8eaed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border: 5px solid white;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.15);
+            flex-shrink: 0;
+        }
 
-h2 {
-  margin-top: 0;
-  font-size: 25px;
-}
+        .profile-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: none;
+        }
 
-.facts {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-  gap: 14px;
-}
+        .photo-placeholder {
+            text-align: center;
+            color: #777;
+            padding: 20px;
+            font-size: 14px;
+        }
 
-.fact {
-  background: #f8fafc;
-  border-radius: 12px;
-  padding: 18px;
-}
+        .profile-info h2 {
+            font-size: 30px;
+            margin-bottom: 5px;
+        }
 
-.label {
-  display: block;
-  font-weight: 700;
-  margin-bottom: 5px;
-}
+        .profile-info .location {
+            color: #5f6368;
+            font-size: 16px;
+        }
 
-.timeline p {
-  margin: 12px 0;
-  padding-left: 15px;
-  border-left: 3px solid #98a2b3;
-}
+        /* SECTIONS */
+        .section {
+            background: white;
+            border-radius: 18px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+        }
 
-a {
-  color: #175cd3;
-  font-weight: 700;
-  text-decoration: none;
-}
+        .section h2 {
+            color: #1a73e8;
+            margin-bottom: 20px;
+            font-size: 25px;
+            border-bottom: 2px solid #e8eaed;
+            padding-bottom: 10px;
+        }
 
-a:hover {
-  text-decoration: underline;
-}
+        /* INFORMATION GRID */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
 
-.badge {
-  display: inline-block;
-  margin-top: 18px;
-  padding: 7px 13px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.15);
-  font-size: 14px;
-}
+        .info-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+        }
 
-.achievement {
-  border-left: 5px solid #175cd3;
-}
+        .info-item strong {
+            display: block;
+            color: #5f6368;
+            font-size: 13px;
+            margin-bottom: 4px;
+            text-transform: uppercase;
+        }
 
-footer {
-  text-align: center;
-  padding: 30px 20px;
-  color: #667085;
-}
-</style>
+        .info-item span {
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        /* FAMILY */
+        .family-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .family-member {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .family-member .icon {
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        .family-member h3 {
+            margin-bottom: 5px;
+        }
+
+        .family-member p {
+            color: #5f6368;
+        }
+
+        /* BIO */
+        .bio {
+            font-size: 17px;
+            color: #444;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #202124;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            color: #bdc1c6;
+            font-size: 14px;
+        }
+
+        /* MOBILE */
+        @media (max-width: 700px) {
+
+            header h1 {
+                font-size: 32px;
+            }
+
+            .profile-top {
+                justify-content: center;
+                text-align: center;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .family-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section,
+            .profile-card {
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<header class="hero">
-  <h1>Mackdonald Dulo</h1>
-  <p>Personal Profile · Mombasa, Kenya</p>
-  <div class="badge">Football enthusiast · Student</div>
-</header>
+    <!-- HEADER -->
+    <header>
+        <h1>Sayor Senior</h1>
+        <p>Personal Profile & Biography</p>
+    </header>
 
-<main class="container">
+    <main class="container">
 
-  <section class="card intro">
-    <h2>About Mackdonald Dulo</h2>
+        <!-- PROFILE -->
+        <section class="profile-card">
+            <div class="profile-top">
 
-    <p>
-      Mackdonald Dulo is a Kenyan student from Mombasa.
-      He began his education at Linet Primary School and later
-      attended Kenyatta High School. His interests include
-      football, and he has also participated in mathematics competitions.
-    </p>
-  </section>
+                <div class="profile-photo">
 
-  <section class="card">
-    <h2>Personal Information</h2>
+                    <!--
+                    WHEN YOU HAVE YOUR PHOTO:
+                    1. Put the picture in the same folder as this HTML file.
+                    2. Rename it to "profile.jpg".
+                    3. Remove the display:none from the image below.
+                    -->
 
-    <div class="facts">
+                    <img src="profile.jpg" alt="Photo of Sayor Senior">
 
-      <div class="fact">
-        <span class="label">Full name</span>
-        Mackdonald Dulo
-      </div>
+                    <div class="photo-placeholder">
+                        📷<br>
+                        Profile Picture
+                    </div>
 
-      <div class="fact">
-        <span class="label">Date of birth</span>
-        26 March 2007
-      </div>
+                </div>
 
-      <div class="fact">
-        <span class="label">Birth country</span>
-        Kenya
-      </div>
+                <div class="profile-info">
+                    <h2>Sayor Senior</h2>
+                    <p class="location">📍 Changamwe, Mombasa, Kenya</p>
+                </div>
 
-      <div class="fact">
-        <span class="label">Based in</span>
-        Mombasa, Kenya
-      </div>
+            </div>
+        </section>
 
-      <div class="fact">
-        <span class="label">Height</span>
-        5 ft 8 in (173 cm)
-      </div>
 
-      <div class="fact">
-        <span class="label">Weight</span>
-        55 kg
-      </div>
+        <!-- ABOUT -->
+        <section class="section">
+            <h2>About</h2>
 
-    </div>
-  </section>
+            <p class="bio">
+                Sayor Senior is a Kenyan individual from Changamwe,
+                Mombasa. This website provides information about his
+                personal background, family and other publicly available
+                profile information.
+            </p>
+        </section>
 
-  <section class="card timeline">
-    <h2>Education</h2>
 
-    <p>
-      <strong>Linet Primary School</strong><br>
-      Primary education
-    </p>
+        <!-- PERSONAL INFORMATION -->
+        <section class="section">
+            <h2>Personal Information</h2>
 
-    <p>
-      <strong>Kenyatta High School</strong><br>
-      Secondary education
-    </p>
-  </section>
+            <div class="info-grid">
 
-  <section class="card achievement">
-    <h2>Mathematics Contest Achievement</h2>
+                <div class="info-item">
+                    <strong>Full Name</strong>
+                    <span>Sayor Senior</span>
+                </div>
 
-    <p>
-      Mackdonald Dulo represented
-      <strong>Kenyatta High School–Mwatate</strong>
-      in the
-      <strong>12th National Online Mathematics Contest</strong>.
-      The published contest results list him in Form 2 with
-      a score of 26 and a rank of 283.
-    </p>
+                <div class="info-item">
+                    <strong>Place of Birth</strong>
+                    <span>Changamwe, Mombasa</span>
+                </div>
 
-    <p>
-      <a
-        href="https://countacymathematics.co.ke/wp-content/uploads/2024/04/Results-Countacy-Mathematics-Contest-12th-CMC-R1.pdf"
-        target="_blank"
-        rel="noopener noreferrer">
-        View published contest results
-      </a>
-    </p>
-  </section>
+                <div class="info-item">
+                    <strong>Height</strong>
+                    <span>5'8"</span>
+                </div>
 
-  <section class="card">
-    <h2>Other Achievement</h2>
+                <div class="info-item">
+                    <strong>Weight</strong>
+                    <span>55 kg</span>
+                </div>
 
-    <p>
-      🏆 <strong>Wavumbuzi Certificate</strong>
-    </p>
-  </section>
+                <div class="info-item">
+                    <strong>Country</strong>
+                    <span>Kenya</span>
+                </div>
 
-  <section class="card">
-    <h2>Interests</h2>
+                <div class="info-item">
+                    <strong>City</strong>
+                    <span>Mombasa</span>
+                </div>
 
-    <p>
-      ⚽ Playing football
-    </p>
-  </section>
+            </div>
+        </section>
 
-  <section class="card">
-    <h2>Social Profile</h2>
 
-    <p>
-      Instagram:
-      <a
-        href="https://www.instagram.com/sayor.snr/"
-        target="_blank"
-        rel="noopener noreferrer">
-        @sayor.snr
-      </a>
-    </p>
-  </section>
+        <!-- FAMILY -->
+        <section class="section">
+            <h2>Family</h2>
 
-</main>
+            <div class="family-grid">
 
-<footer>
-  © 2026 Mackdonald Dulo · Personal profile
-</footer>
+                <div class="family-member">
+                    <div class="icon">👨</div>
+                    <h3>Father</h3>
+                    <p>Hezekiah Dulo</p>
+                </div>
+
+                <div class="family-member">
+                    <div class="icon">👩</div>
+                    <h3>Mother</h3>
+                    <p>Florence Linet</p>
+                </div>
+
+                <div class="family-member">
+                    <div class="icon">👤</div>
+                    <h3>Sibling</h3>
+                    <p>Belin Atieno</p>
+                </div>
+
+            </div>
+
+            <br>
+
+            <div class="info-item">
+                <strong>Number of Siblings</strong>
+                <span>1</span>
+            </div>
+
+        </section>
+
+
+        <!-- BACKGROUND -->
+        <section class="section">
+            <h2>Background</h2>
+
+            <p class="bio">
+                <strong>Place of Birth:</strong> Changamwe, Mombasa, Kenya.
+            </p>
+
+            <br>
+
+            <p class="bio">
+                Changamwe is an area within Mombasa County, Kenya.
+                This profile is intended to provide a simple central
+                webpage containing information about Sayor Senior.
+            </p>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Sayor Senior. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
