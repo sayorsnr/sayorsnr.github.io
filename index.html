@@ -4,163 +4,283 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Sayor Senior | Personal Profile</title>
+    <title>Sayor Senior | Biography & Personal Profile</title>
 
-    <meta name="description" content="Official personal profile of Sayor Senior. Learn about his biography, personal information, family, and background.">
+    <meta name="description"
+          content="Official personal profile of Sayor Senior from Changamwe, Mombasa, Kenya.">
 
     <style>
+
+        /* =========================
+           GENERAL
+        ========================= */
+
         * {
-            box-sizing: border-box;
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
 
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background: #f5f6f8;
+            background: #f4f6f8;
             color: #202124;
             line-height: 1.6;
         }
 
-        /* HEADER */
-        header {
-            background: linear-gradient(135deg, #1a73e8, #4285f4);
-            color: white;
-            padding: 45px 20px;
-            text-align: center;
+        a {
+            text-decoration: none;
         }
 
-        header h1 {
-            font-size: 42px;
+
+        /* =========================
+           NAVIGATION
+        ========================= */
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+
+            background: white;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            gap: 25px;
+
+            padding: 16px 20px;
+
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        nav a {
+            color: #333;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #1a73e8;
+        }
+
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            background: linear-gradient(
+                135deg,
+                #1a73e8,
+                #4285f4
+            );
+
+            color: white;
+
+            text-align: center;
+
+            padding: 70px 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
             margin-bottom: 8px;
         }
 
-        header p {
-            font-size: 18px;
-            opacity: 0.95;
+        .hero p {
+            font-size: 19px;
         }
 
-        /* MAIN CONTAINER */
+
+        /* =========================
+           MAIN CONTAINER
+        ========================= */
+
         .container {
-            max-width: 1000px;
-            margin: 30px auto;
-            padding: 0 20px;
+            width: 92%;
+            max-width: 1050px;
+            margin: 35px auto;
         }
 
-        /* PROFILE CARD */
+
+        /* =========================
+           PROFILE CARD
+        ========================= */
+
         .profile-card {
             background: white;
-            border-radius: 18px;
-            padding: 30px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+
+            border-radius: 20px;
+
+            padding: 35px;
+
             margin-bottom: 25px;
+
+            box-shadow: 0 5px 25px rgba(0,0,0,0.08);
         }
 
-        .profile-top {
+        .profile {
             display: flex;
             align-items: center;
-            gap: 30px;
-            flex-wrap: wrap;
+            gap: 35px;
         }
 
-        /* PHOTO PLACEHOLDER */
+
+        /* =========================
+           PROFILE PHOTO
+        ========================= */
+
         .profile-photo {
-            width: 180px;
-            height: 180px;
+            width: 200px;
+            height: 200px;
+
             border-radius: 50%;
-            background: #e8eaed;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+
             overflow: hidden;
-            border: 5px solid white;
-            box-shadow: 0 3px 15px rgba(0,0,0,0.15);
+
             flex-shrink: 0;
+
+            border: 5px solid white;
+
+            box-shadow:
+                0 5px 20px rgba(0,0,0,0.20);
+
+            background: #e8eaed;
         }
 
         .profile-photo img {
             width: 100%;
             height: 100%;
+
             object-fit: cover;
-            display: none;
+
+            display: block;
         }
 
-        .photo-placeholder {
-            text-align: center;
-            color: #777;
-            padding: 20px;
-            font-size: 14px;
+        .profile-details h2 {
+            font-size: 34px;
+            margin-bottom: 8px;
         }
 
-        .profile-info h2 {
-            font-size: 30px;
-            margin-bottom: 5px;
-        }
-
-        .profile-info .location {
+        .profile-details p {
             color: #5f6368;
-            font-size: 16px;
+            font-size: 17px;
         }
 
-        /* SECTIONS */
+
+        /* =========================
+           SECTIONS
+        ========================= */
+
         .section {
             background: white;
+
             border-radius: 18px;
+
             padding: 30px;
+
             margin-bottom: 25px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+
+            box-shadow:
+                0 4px 20px rgba(0,0,0,0.06);
         }
 
         .section h2 {
             color: #1a73e8;
+
+            font-size: 27px;
+
             margin-bottom: 20px;
-            font-size: 25px;
-            border-bottom: 2px solid #e8eaed;
+
             padding-bottom: 10px;
+
+            border-bottom:
+                2px solid #e8eaed;
         }
 
-        /* INFORMATION GRID */
+
+        /* =========================
+           ABOUT
+        ========================= */
+
+        .bio {
+            font-size: 17px;
+            color: #444;
+        }
+
+
+        /* =========================
+           INFORMATION GRID
+        ========================= */
+
         .info-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
             gap: 15px;
         }
 
         .info-item {
             background: #f8f9fa;
-            padding: 15px;
-            border-radius: 10px;
+
+            padding: 18px;
+
+            border-radius: 12px;
         }
 
         .info-item strong {
             display: block;
+
             color: #5f6368;
-            font-size: 13px;
-            margin-bottom: 4px;
+
+            font-size: 12px;
+
             text-transform: uppercase;
+
+            margin-bottom: 5px;
         }
 
         .info-item span {
-            font-size: 16px;
+            font-size: 17px;
+
             font-weight: 500;
         }
 
-        /* FAMILY */
+
+        /* =========================
+           FAMILY
+        ========================= */
+
         .family-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 15px;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 20px;
         }
 
         .family-member {
             background: #f8f9fa;
-            padding: 20px;
-            border-radius: 12px;
+
+            padding: 25px;
+
+            border-radius: 14px;
+
             text-align: center;
         }
 
-        .family-member .icon {
-            font-size: 35px;
+        .family-icon {
+            font-size: 42px;
+
             margin-bottom: 10px;
         }
 
@@ -172,35 +292,243 @@
             color: #5f6368;
         }
 
-        /* BIO */
-        .bio {
-            font-size: 17px;
-            color: #444;
+
+        /* =========================
+           WAVUMBUZI
+        ========================= */
+
+        .wavumbuzi-card {
+            background:
+                linear-gradient(
+                    135deg,
+                    #f8f9fa,
+                    #eef3ff
+                );
+
+            border-radius: 15px;
+
+            padding: 25px;
+
+            border-left:
+                5px solid #1a73e8;
         }
 
-        /* FOOTER */
+        .wavumbuzi-card h3 {
+            font-size: 23px;
+
+            margin-bottom: 10px;
+        }
+
+        .wavumbuzi-card p {
+            color: #555;
+
+            margin-bottom: 15px;
+        }
+
+        .wavumbuzi-button {
+            display: inline-block;
+
+            background: #1a73e8;
+
+            color: white;
+
+            padding: 10px 18px;
+
+            border-radius: 8px;
+
+            font-weight: bold;
+        }
+
+        .wavumbuzi-button:hover {
+            background: #1557b0;
+        }
+
+
+        /* =========================
+           SOCIAL MEDIA
+        ========================= */
+
+        .social-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 15px;
+        }
+
+        .social-card {
+            background: #f8f9fa;
+
+            border-radius: 12px;
+
+            padding: 20px;
+
+            text-align: center;
+
+            transition: 0.2s;
+        }
+
+        .social-card:hover {
+            transform: translateY(-3px);
+
+            box-shadow:
+                0 5px 15px rgba(0,0,0,0.10);
+        }
+
+        .social-icon {
+            font-size: 35px;
+
+            margin-bottom: 8px;
+        }
+
+        .social-card h3 {
+            color: #202124;
+
+            margin-bottom: 5px;
+        }
+
+        .social-card p {
+            color: #5f6368;
+
+            font-size: 14px;
+        }
+
+
+        /* =========================
+           EDUCATION
+        ========================= */
+
+        .timeline {
+            border-left:
+                3px solid #1a73e8;
+
+            padding-left: 25px;
+        }
+
+        .timeline-item {
+            margin-bottom: 25px;
+
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: "";
+
+            width: 12px;
+            height: 12px;
+
+            background: #1a73e8;
+
+            border-radius: 50%;
+
+            position: absolute;
+
+            left: -32px;
+            top: 7px;
+        }
+
+        .timeline-item h3 {
+            margin-bottom: 5px;
+        }
+
+        .timeline-item p {
+            color: #666;
+        }
+
+
+        /* =========================
+           INTERESTS
+        ========================= */
+
+        .tags {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 10px;
+        }
+
+        .tag {
+            background: #e8f0fe;
+
+            color: #1a73e8;
+
+            padding: 8px 15px;
+
+            border-radius: 20px;
+
+            font-size: 14px;
+
+            font-weight: bold;
+        }
+
+
+        /* =========================
+           CONTACT
+        ========================= */
+
+        .contact-box {
+            background: #f8f9fa;
+
+            border-radius: 12px;
+
+            padding: 20px;
+        }
+
+        .contact-box p {
+            margin-bottom: 8px;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
         footer {
             background: #202124;
+
             color: white;
+
             text-align: center;
-            padding: 25px;
+
+            padding: 35px 20px;
+
             margin-top: 40px;
         }
 
         footer p {
             color: #bdc1c6;
-            font-size: 14px;
+
+            margin-top: 5px;
         }
 
-        /* MOBILE */
-        @media (max-width: 700px) {
 
-            header h1 {
-                font-size: 32px;
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 750px) {
+
+            nav {
+                gap: 12px;
+
+                overflow-x: auto;
+
+                justify-content: flex-start;
             }
 
-            .profile-top {
-                justify-content: center;
+            nav a {
+                white-space: nowrap;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .profile {
+                flex-direction: column;
+
                 text-align: center;
             }
 
@@ -212,168 +540,642 @@
                 grid-template-columns: 1fr;
             }
 
+            .social-grid {
+                grid-template-columns: 1fr;
+            }
+
             .section,
             .profile-card {
-                padding: 20px;
+                padding: 22px;
             }
+
         }
+
     </style>
+
 </head>
+
 
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <h1>Sayor Senior</h1>
-        <p>Personal Profile & Biography</p>
-    </header>
 
-    <main class="container">
+<!-- =========================
+     NAVIGATION
+========================= -->
 
-        <!-- PROFILE -->
-        <section class="profile-card">
-            <div class="profile-top">
+<nav>
 
-                <div class="profile-photo">
+    <a href="#about">About</a>
 
-                    <!--
-                    WHEN YOU HAVE YOUR PHOTO:
-                    1. Put the picture in the same folder as this HTML file.
-                    2. Rename it to "profile.jpg".
-                    3. Remove the display:none from the image below.
-                    -->
+    <a href="#personal">Personal</a>
 
-                    <img src="profile.jpg" alt="Photo of Sayor Senior">
+    <a href="#family">Family</a>
 
-                    <div class="photo-placeholder">
-                        📷<br>
-                        Profile Picture
-                    </div>
+    <a href="#wavumbuzi">Wavumbuzi</a>
 
-                </div>
+    <a href="#social">Social</a>
 
-                <div class="profile-info">
-                    <h2>Sayor Senior</h2>
-                    <p class="location">📍 Changamwe, Mombasa, Kenya</p>
-                </div>
+    <a href="#education">Education</a>
 
-            </div>
-        </section>
+</nav>
 
 
-        <!-- ABOUT -->
-        <section class="section">
-            <h2>About</h2>
+<!-- =========================
+     HERO
+========================= -->
 
-            <p class="bio">
-                Sayor Senior is a Kenyan individual from Changamwe,
-                Mombasa. This website provides information about his
-                personal background, family and other publicly available
-                profile information.
-            </p>
-        </section>
+<header class="hero">
 
+    <h1>Sayor Senior</h1>
 
-        <!-- PERSONAL INFORMATION -->
-        <section class="section">
-            <h2>Personal Information</h2>
+    <p>Personal Profile & Biography</p>
 
-            <div class="info-grid">
-
-                <div class="info-item">
-                    <strong>Full Name</strong>
-                    <span>Sayor Senior</span>
-                </div>
-
-                <div class="info-item">
-                    <strong>Place of Birth</strong>
-                    <span>Changamwe, Mombasa</span>
-                </div>
-
-                <div class="info-item">
-                    <strong>Height</strong>
-                    <span>5'8"</span>
-                </div>
-
-                <div class="info-item">
-                    <strong>Weight</strong>
-                    <span>55 kg</span>
-                </div>
-
-                <div class="info-item">
-                    <strong>Country</strong>
-                    <span>Kenya</span>
-                </div>
-
-                <div class="info-item">
-                    <strong>City</strong>
-                    <span>Mombasa</span>
-                </div>
-
-            </div>
-        </section>
+</header>
 
 
-        <!-- FAMILY -->
-        <section class="section">
-            <h2>Family</h2>
-
-            <div class="family-grid">
-
-                <div class="family-member">
-                    <div class="icon">👨</div>
-                    <h3>Father</h3>
-                    <p>Hezekiah Dulo</p>
-                </div>
-
-                <div class="family-member">
-                    <div class="icon">👩</div>
-                    <h3>Mother</h3>
-                    <p>Florence Linet</p>
-                </div>
-
-                <div class="family-member">
-                    <div class="icon">👤</div>
-                    <h3>Sibling</h3>
-                    <p>Belin Atieno</p>
-                </div>
-
-            </div>
-
-            <br>
-
-            <div class="info-item">
-                <strong>Number of Siblings</strong>
-                <span>1</span>
-            </div>
-
-        </section>
+<main class="container">
 
 
-        <!-- BACKGROUND -->
-        <section class="section">
-            <h2>Background</h2>
+<!-- =========================
+     PROFILE
+========================= -->
 
-            <p class="bio">
-                <strong>Place of Birth:</strong> Changamwe, Mombasa, Kenya.
+<section class="profile-card">
+
+    <div class="profile">
+
+
+        <!--
+        PHOTO INSTRUCTION:
+
+        Put your photo in the SAME FOLDER as index.html.
+
+        Rename your photo:
+
+        profile.jpg
+
+        Then it will automatically appear here.
+        -->
+
+        <div class="profile-photo">
+
+            <img
+                src="profile.jpg"
+                alt="Photo of Sayor Senior"
+            >
+
+        </div>
+
+
+        <div class="profile-details">
+
+            <h2>Sayor Senior</h2>
+
+            <p>
+                📍 Changamwe, Mombasa, Kenya
             </p>
 
-            <br>
+        </div>
 
-            <p class="bio">
-                Changamwe is an area within Mombasa County, Kenya.
-                This profile is intended to provide a simple central
-                webpage containing information about Sayor Senior.
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section
+    class="section"
+    id="about"
+>
+
+    <h2>About Sayor Senior</h2>
+
+    <p class="bio">
+
+        Sayor Senior is a Kenyan individual from
+        Changamwe, Mombasa.
+
+        This website serves as a personal profile
+        containing information about his background,
+        family, interests, activities and other
+        publicly available information.
+
+    </p>
+
+</section>
+
+
+<!-- =========================
+     PERSONAL INFORMATION
+========================= -->
+
+<section
+    class="section"
+    id="personal"
+>
+
+    <h2>Personal Information</h2>
+
+
+    <div class="info-grid">
+
+
+        <div class="info-item">
+
+            <strong>Full Name</strong>
+
+            <span>
+                Sayor Senior
+            </span>
+
+        </div>
+
+
+        <div class="info-item">
+
+            <strong>Place of Birth</strong>
+
+            <span>
+                Changamwe, Mombasa
+            </span>
+
+        </div>
+
+
+        <div class="info-item">
+
+            <strong>Date of Birth</strong>
+
+            <span>
+                Not provided
+            </span>
+
+        </div>
+
+
+        <div class="info-item">
+
+            <strong>Height</strong>
+
+            <span>
+                5'8"
+            </span>
+
+        </div>
+
+
+        <div class="info-item">
+
+            <strong>Weight</strong>
+
+            <span>
+                55 kg
+            </span>
+
+        </div>
+
+
+        <div class="info-item">
+
+            <strong>City</strong>
+
+            <span>
+                Mombasa
+            </span>
+
+        </div>
+
+
+        <div class="info-item">
+
+            <strong>Country</strong>
+
+            <span>
+                Kenya
+            </span>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     BIRTH
+========================= -->
+
+<section class="section">
+
+    <h2>Birth Information</h2>
+
+
+    <div class="info-grid">
+
+
+        <div class="info-item">
+
+            <strong>Date of Birth</strong>
+
+            <span>
+                Not provided
+            </span>
+
+        </div>
+
+
+        <div class="info-item">
+
+            <strong>Place of Birth</strong>
+
+            <span>
+                Changamwe, Mombasa
+            </span>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FAMILY
+========================= -->
+
+<section
+    class="section"
+    id="family"
+>
+
+    <h2>Family</h2>
+
+
+    <div class="family-grid">
+
+
+        <div class="family-member">
+
+            <div class="family-icon">
+                👨
+            </div>
+
+            <h3>Father</h3>
+
+            <p>
+                Hezekiah Dulo
             </p>
-        </section>
 
-    </main>
+        </div>
 
 
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2026 Sayor Senior. All rights reserved.</p>
-    </footer>
+        <div class="family-member">
+
+            <div class="family-icon">
+                👩
+            </div>
+
+            <h3>Mother</h3>
+
+            <p>
+                Florence Linet
+            </p>
+
+        </div>
+
+
+        <div class="family-member">
+
+            <div class="family-icon">
+                👤
+            </div>
+
+            <h3>Sibling</h3>
+
+            <p>
+                Belin Atieno
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+    <br>
+
+
+    <div class="info-item">
+
+        <strong>Number of Siblings</strong>
+
+        <span>
+            1
+        </span>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     WAVUMBUZI
+========================= -->
+
+<section
+    class="section"
+    id="wavumbuzi"
+>
+
+    <h2>Wavumbuzi</h2>
+
+
+    <div class="wavumbuzi-card">
+
+        <h3>
+            Wavumbuzi
+        </h3>
+
+
+        <p>
+
+            <!--
+            PUT YOUR EXACT WAVUMBUZI INFORMATION HERE.
+
+            Example:
+
+            Sayor Senior participated in...
+            -->
+
+            Wavumbuzi information will appear here.
+
+        </p>
+
+
+        <!--
+        If you have a Wavumbuzi website/profile link,
+        replace # below with the real link.
+        -->
+
+        <a
+            class="wavumbuzi-button"
+            href="#"
+            target="_blank"
+        >
+
+            View Wavumbuzi Profile
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SOCIAL MEDIA
+========================= -->
+
+<section
+    class="section"
+    id="social"
+>
+
+    <h2>Social Media</h2>
+
+
+    <div class="social-grid">
+
+
+        <!-- INSTAGRAM -->
+
+        <a
+            class="social-card"
+            href="#"
+            target="_blank"
+        >
+
+            <div class="social-icon">
+                📷
+            </div>
+
+            <h3>
+                Instagram
+            </h3>
+
+            <p>
+                Add Instagram profile
+            </p>
+
+        </a>
+
+
+        <!-- FACEBOOK -->
+
+        <a
+            class="social-card"
+            href="#"
+            target="_blank"
+        >
+
+            <div class="social-icon">
+                👍
+            </div>
+
+            <h3>
+                Facebook
+            </h3>
+
+            <p>
+                Add Facebook profile
+            </p>
+
+        </a>
+
+
+        <!-- X -->
+
+        <a
+            class="social-card"
+            href="#"
+            target="_blank"
+        >
+
+            <div class="social-icon">
+                𝕏
+            </div>
+
+            <h3>
+                X
+            </h3>
+
+            <p>
+                Add X profile
+            </p>
+
+        </a>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     EDUCATION
+========================= -->
+
+<section
+    class="section"
+    id="education"
+>
+
+    <h2>Education</h2>
+
+
+    <div class="timeline">
+
+
+        <div class="timeline-item">
+
+            <h3>
+                Education
+            </h3>
+
+            <p>
+                Education information will be
+                added here.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     INTERESTS
+========================= -->
+
+<section class="section">
+
+    <h2>Interests</h2>
+
+
+    <div class="tags">
+
+
+        <span class="tag">
+            Technology
+        </span>
+
+
+        <span class="tag">
+            Sports
+        </span>
+
+
+        <span class="tag">
+            Innovation
+        </span>
+
+
+        <span class="tag">
+            Entertainment
+        </span>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     BACKGROUND
+========================= -->
+
+<section class="section">
+
+    <h2>Background</h2>
+
+
+    <p class="bio">
+
+        Sayor Senior was born in Changamwe,
+        Mombasa, Kenya.
+
+        Changamwe is located within Mombasa
+        County on the Kenyan coast.
+
+    </p>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section class="section">
+
+    <h2>Contact</h2>
+
+
+    <div class="contact-box">
+
+        <p>
+            <strong>Name:</strong>
+            Sayor Senior
+        </p>
+
+
+        <p>
+            <strong>Location:</strong>
+            Mombasa, Kenya
+        </p>
+
+
+        <p>
+            <strong>Place of Birth:</strong>
+            Changamwe, Mombasa
+        </p>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <h3>
+        Sayor Senior
+    </h3>
+
+    <p>
+        Personal Profile & Biography
+    </p>
+
+    <p>
+        © 2026 Sayor Senior. All rights reserved.
+    </p>
+
+</footer>
+
 
 </body>
 </html>
