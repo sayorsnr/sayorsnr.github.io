@@ -4,21 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Mackdonald Dulo | Biography & Personal Profile</title>
+    <title>Mackdonald Dulo | Personal Profile</title>
 
-    <meta name="description"
-          content="Official personal profile of Sayor Senior from Changamwe, Mombasa, Kenya.">
+    <meta name="description" content="Mackdonald Dulo is a Kenyan student from Mombasa with an interest in football, education and mathematics. View his biography, education, achievements and personal profile.">
+
+    <meta name="author" content="Mackdonald Dulo">
+    <meta name="robots" content="index, follow">
+
+    <!-- Search-engine structured information -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Mackdonald Dulo",
+        "givenName": "Mackdonald",
+        "familyName": "Dulo",
+
+        "birthDate": "2007-03-26",
+
+        "birthPlace": {
+            "@type": "Place",
+            "name": "Mombasa, Kenya"
+        },
+
+        "homeLocation": {
+            "@type": "Place",
+            "name": "Mombasa, Kenya"
+        },
+
+        "nationality": {
+            "@type": "Country",
+            "name": "Kenya"
+        },
+
+        "image": "https://sayorsnr.github.io/profile.webp",
+
+        "alumniOf": [
+            {
+                "@type": "EducationalOrganization",
+                "name": "Linet Primary School"
+            },
+            {
+                "@type": "EducationalOrganization",
+                "name": "Kenyatta High School"
+            }
+        ],
+
+        "parent": [
+            {
+                "@type": "Person",
+                "name": "Hezekiah Dulo"
+            },
+            {
+                "@type": "Person",
+                "name": "Florence Linet"
+            }
+        ],
+
+        "sibling": [
+            {
+                "@type": "Person",
+                "name": "Belin Atieno"
+            }
+        ],
+
+        "sameAs": [
+            "https://www.instagram.com/sayor.snr/"
+        ],
+
+        "knowsAbout": [
+            "Football",
+            "Mathematics",
+            "Education"
+        ]
+    }
+    </script>
 
     <style>
 
-        /* =========================
-           GENERAL
-        ========================= */
-
         * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
 
         html {
@@ -27,1155 +94,645 @@
 
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background: #f4f6f8;
-            color: #202124;
+            background: #f5f7fa;
+            color: #172033;
             line-height: 1.6;
         }
 
-        a {
-            text-decoration: none;
-        }
-
-
-        /* =========================
-           NAVIGATION
-        ========================= */
+        /* NAVIGATION */
 
         nav {
-            position: sticky;
+            position: absolute;
             top: 0;
-            z-index: 1000;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px 5%;
+            z-index: 10;
+        }
 
-            background: white;
+        .logo {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
 
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .nav-links a:hover {
+            color: #3b9cff;
+        }
+
+        /* HERO */
+
+        .hero {
+            min-height: 600px;
+            background: #050505;
+            color: white;
+            display: grid;
+            grid-template-columns: 45% 55%;
+            align-items: center;
+            padding-top: 70px;
+        }
+
+        .hero-image {
+            height: 530px;
             display: flex;
             justify-content: center;
             align-items: center;
-
-            gap: 25px;
-
-            padding: 16px 20px;
-
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            overflow: hidden;
         }
 
-        nav a {
-            color: #333;
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            filter: grayscale(100%);
+        }
+
+        .hero-content {
+            padding: 50px;
+        }
+
+        .hero-small {
+            color: #3194ff;
+            font-size: 15px;
             font-weight: bold;
-            font-size: 14px;
-        }
-
-        nav a:hover {
-            color: #1a73e8;
-        }
-
-
-        /* =========================
-           HERO
-        ========================= */
-
-        .hero {
-            background: linear-gradient(
-                135deg,
-                #1a73e8,
-                #4285f4
-            );
-
-            color: white;
-
-            text-align: center;
-
-            padding: 70px 20px;
+            letter-spacing: 2px;
+            margin-bottom: 18px;
         }
 
         .hero h1 {
-            font-size: 48px;
-            margin-bottom: 8px;
+            font-size: clamp(50px, 7vw, 90px);
+            line-height: 0.95;
+            margin-bottom: 25px;
         }
 
-        .hero p {
-            font-size: 19px;
+        .hero-line {
+            width: 50px;
+            height: 4px;
+            background: #2189ff;
+            margin-bottom: 25px;
         }
 
+        .hero-description {
+            max-width: 620px;
+            font-size: 18px;
+            color: #d0d5dd;
+            margin-bottom: 28px;
+        }
 
-        /* =========================
-           MAIN CONTAINER
-        ========================= */
+        .hero-contact {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .hero-contact span {
+            color: #eeeeee;
+        }
+
+        /* MAIN */
 
         .container {
             width: 92%;
-            max-width: 1050px;
+            max-width: 1200px;
             margin: 35px auto;
         }
 
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 22px;
+        }
 
-        /* =========================
-           PROFILE CARD
-        ========================= */
-
-        .profile-card {
+        .card {
             background: white;
-
-            border-radius: 20px;
-
-            padding: 35px;
-
-            margin-bottom: 25px;
-
-            box-shadow: 0 5px 25px rgba(0,0,0,0.08);
-        }
-
-        .profile {
-            display: flex;
-            align-items: center;
-            gap: 35px;
-        }
-
-
-        /* =========================
-           PROFILE PHOTO
-        ========================= */
-
-        .profile-photo {
-            width: 200px;
-            height: 200px;
-
-            border-radius: 50%;
-
-            overflow: hidden;
-
-            flex-shrink: 0;
-
-            border: 5px solid white;
-
-            box-shadow:
-                0 5px 20px rgba(0,0,0,0.20);
-
-            background: #e8eaed;
-        }
-
-        .profile-photo img {
-            width: 100%;
-            height: 100%;
-
-            object-fit: cover;
-
-            display: block;
-        }
-
-        .profile-details h2 {
-            font-size: 34px;
-            margin-bottom: 8px;
-        }
-
-        .profile-details p {
-            color: #5f6368;
-            font-size: 17px;
-        }
-
-
-        /* =========================
-           SECTIONS
-        ========================= */
-
-        .section {
-            background: white;
-
-            border-radius: 18px;
-
+            border-radius: 16px;
             padding: 30px;
-
-            margin-bottom: 25px;
-
-            box-shadow:
-                0 4px 20px rgba(0,0,0,0.06);
+            box-shadow: 0 5px 22px rgba(0,0,0,0.07);
         }
 
-        .section h2 {
-            color: #1a73e8;
-
-            font-size: 27px;
-
-            margin-bottom: 20px;
-
-            padding-bottom: 10px;
-
-            border-bottom:
-                2px solid #e8eaed;
+        .card.full {
+            grid-column: 1 / -1;
         }
 
-
-        /* =========================
-           ABOUT
-        ========================= */
-
-        .bio {
-            font-size: 17px;
-            color: #444;
-        }
-
-
-        /* =========================
-           INFORMATION GRID
-        ========================= */
-
-        .info-grid {
-            display: grid;
-
-            grid-template-columns:
-                repeat(2, 1fr);
-
-            gap: 15px;
-        }
-
-        .info-item {
-            background: #f8f9fa;
-
-            padding: 18px;
-
-            border-radius: 12px;
-        }
-
-        .info-item strong {
-            display: block;
-
-            color: #5f6368;
-
-            font-size: 12px;
-
-            text-transform: uppercase;
-
-            margin-bottom: 5px;
-        }
-
-        .info-item span {
-            font-size: 17px;
-
-            font-weight: 500;
-        }
-
-
-        /* =========================
-           FAMILY
-        ========================= */
-
-        .family-grid {
-            display: grid;
-
-            grid-template-columns:
-                repeat(3, 1fr);
-
-            gap: 20px;
-        }
-
-        .family-member {
-            background: #f8f9fa;
-
-            padding: 25px;
-
-            border-radius: 14px;
-
-            text-align: center;
-        }
-
-        .family-icon {
-            font-size: 42px;
-
-            margin-bottom: 10px;
-        }
-
-        .family-member h3 {
-            margin-bottom: 5px;
-        }
-
-        .family-member p {
-            color: #5f6368;
-        }
-
-
-        /* =========================
-           WAVUMBUZI
-        ========================= */
-
-        .wavumbuzi-card {
-            background:
-                linear-gradient(
-                    135deg,
-                    #f8f9fa,
-                    #eef3ff
-                );
-
-            border-radius: 15px;
-
-            padding: 25px;
-
-            border-left:
-                5px solid #1a73e8;
-        }
-
-        .wavumbuzi-card h3 {
+        .card h2 {
             font-size: 23px;
-
-            margin-bottom: 10px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #edf0f4;
+            padding-bottom: 12px;
         }
 
-        .wavumbuzi-card p {
-            color: #555;
+        /* PERSONAL INFORMATION */
 
-            margin-bottom: 15px;
-        }
-
-        .wavumbuzi-button {
-            display: inline-block;
-
-            background: #1a73e8;
-
-            color: white;
-
-            padding: 10px 18px;
-
-            border-radius: 8px;
-
-            font-weight: bold;
-        }
-
-        .wavumbuzi-button:hover {
-            background: #1557b0;
-        }
-
-
-        /* =========================
-           SOCIAL MEDIA
-        ========================= */
-
-        .social-grid {
+        .info-row {
             display: grid;
-
-            grid-template-columns:
-                repeat(3, 1fr);
-
-            gap: 15px;
+            grid-template-columns: 45% 55%;
+            padding: 13px 0;
+            border-bottom: 1px solid #edf0f4;
         }
 
-        .social-card {
-            background: #f8f9fa;
-
-            border-radius: 12px;
-
-            padding: 20px;
-
-            text-align: center;
-
-            transition: 0.2s;
+        .info-row:last-child {
+            border-bottom: none;
         }
 
-        .social-card:hover {
-            transform: translateY(-3px);
-
-            box-shadow:
-                0 5px 15px rgba(0,0,0,0.10);
-        }
-
-        .social-icon {
-            font-size: 35px;
-
-            margin-bottom: 8px;
-        }
-
-        .social-card h3 {
-            color: #202124;
-
-            margin-bottom: 5px;
-        }
-
-        .social-card p {
-            color: #5f6368;
-
-            font-size: 14px;
-        }
-
-
-        /* =========================
-           EDUCATION
-        ========================= */
-
-        .timeline {
-            border-left:
-                3px solid #1a73e8;
-
-            padding-left: 25px;
-        }
-
-        .timeline-item {
-            margin-bottom: 25px;
-
-            position: relative;
-        }
-
-        .timeline-item::before {
-            content: "";
-
-            width: 12px;
-            height: 12px;
-
-            background: #1a73e8;
-
-            border-radius: 50%;
-
-            position: absolute;
-
-            left: -32px;
-            top: 7px;
-        }
-
-        .timeline-item h3 {
-            margin-bottom: 5px;
-        }
-
-        .timeline-item p {
-            color: #666;
-        }
-
-
-        /* =========================
-           INTERESTS
-        ========================= */
-
-        .tags {
-            display: flex;
-
-            flex-wrap: wrap;
-
-            gap: 10px;
-        }
-
-        .tag {
-            background: #e8f0fe;
-
-            color: #1a73e8;
-
-            padding: 8px 15px;
-
-            border-radius: 20px;
-
-            font-size: 14px;
-
+        .info-label {
             font-weight: bold;
+            color: #475467;
         }
 
-
-        /* =========================
-           CONTACT
-        ========================= */
-
-        .contact-box {
-            background: #f8f9fa;
-
-            border-radius: 12px;
-
-            padding: 20px;
+        .info-value {
+            color: #172033;
         }
 
-        .contact-box p {
+        /* FAMILY */
+
+        .family-row {
+            padding: 15px 0;
+            border-bottom: 1px solid #edf0f4;
+        }
+
+        .family-row:last-child {
+            border-bottom: none;
+        }
+
+        .family-role {
+            font-weight: bold;
+            color: #475467;
+            display: block;
+        }
+
+        /* EDUCATION */
+
+        .education-item {
+            position: relative;
+            padding: 10px 0 20px 25px;
+            border-left: 3px solid #2189ff;
+            margin-left: 10px;
+        }
+
+        .education-item:last-child {
+            padding-bottom: 5px;
+        }
+
+        .education-item h3 {
+            margin-bottom: 5px;
+        }
+
+        .education-item p {
+            color: #667085;
+        }
+
+        /* ACHIEVEMENTS */
+
+        .achievement {
+            padding: 20px 0;
+            border-bottom: 1px solid #edf0f4;
+        }
+
+        .achievement:last-child {
+            border-bottom: none;
+        }
+
+        .achievement h3 {
             margin-bottom: 8px;
         }
 
+        .achievement p {
+            color: #475467;
+        }
 
-        /* =========================
-           FOOTER
-        ========================= */
+        .results-link {
+            display: inline-block;
+            margin-top: 12px;
+            color: #1769d2;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .results-link:hover {
+            text-decoration: underline;
+        }
+
+        /* INTERESTS */
+
+        .interest {
+            font-size: 20px;
+        }
+
+        /* INSTAGRAM */
+
+        .instagram {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 12px 20px;
+            background: #f3f6fa;
+            border-radius: 10px;
+            color: #1769d2;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .instagram:hover {
+            background: #e7edf5;
+        }
+
+        /* FOOTER */
 
         footer {
-            background: #202124;
-
-            color: white;
-
+            margin-top: 50px;
+            background: #101828;
+            color: #98a2b3;
             text-align: center;
-
-            padding: 35px 20px;
-
-            margin-top: 40px;
+            padding: 30px;
         }
 
-        footer p {
-            color: #bdc1c6;
-
-            margin-top: 5px;
+        footer strong {
+            color: white;
         }
 
+        /* MOBILE */
 
-        /* =========================
-           MOBILE
-        ========================= */
-
-        @media (max-width: 750px) {
+        @media (max-width: 800px) {
 
             nav {
-                gap: 12px;
-
-                overflow-x: auto;
-
-                justify-content: flex-start;
+                position: relative;
+                background: #050505;
+                flex-direction: column;
+                gap: 15px;
             }
 
-            nav a {
-                white-space: nowrap;
+            .nav-links {
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero {
+                grid-template-columns: 1fr;
+                padding-top: 0;
+            }
+
+            .hero-image {
+                height: 430px;
+            }
+
+            .hero-content {
+                padding: 45px 25px;
             }
 
             .hero h1 {
-                font-size: 36px;
+                font-size: 58px;
             }
 
-            .profile {
-                flex-direction: column;
-
-                text-align: center;
-            }
-
-            .info-grid {
+            .grid {
                 grid-template-columns: 1fr;
             }
 
-            .family-grid {
+            .card.full {
+                grid-column: auto;
+            }
+
+            .info-row {
                 grid-template-columns: 1fr;
+                gap: 4px;
             }
-
-            .social-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .section,
-            .profile-card {
-                padding: 22px;
-            }
-
         }
 
     </style>
-
 </head>
-
 
 <body>
 
-
-<!-- =========================
-     NAVIGATION
-========================= -->
+<!-- NAVIGATION -->
 
 <nav>
 
-    <a href="#about">About</a>
+    <div class="logo">
+        MACKDONALD DULO
+    </div>
 
-    <a href="#personal">Personal</a>
-
-    <a href="#family">Family</a>
-
-    <a href="#wavumbuzi">Wavumbuzi</a>
-
-    <a href="#social">Social</a>
-
-    <a href="#education">Education</a>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
 
 </nav>
 
 
-<!-- =========================
-     HERO
-========================= -->
+<!-- HERO -->
 
-<header class="hero">
+<header class="hero" id="home">
 
-    <h1>Sayor Senior</h1>
+    <div class="hero-image">
 
-    <p>Personal Profile & Biography</p>
+        <img src="profile.webp"
+             alt="Portrait of Mackdonald Dulo">
+
+    </div>
+
+    <div class="hero-content">
+
+        <div class="hero-small">
+            STUDENT &nbsp; • &nbsp; FOOTBALL ENTHUSIAST &nbsp; • &nbsp; DREAMER
+        </div>
+
+        <h1>
+            Mackdonald<br>
+            Dulo
+        </h1>
+
+        <div class="hero-line"></div>
+
+        <p class="hero-description">
+            A dedicated student from Mombasa, Kenya with an interest
+            in education, football, mathematics and personal growth.
+        </p>
+
+        <div class="hero-contact">
+
+            <span>
+                📍 Mombasa, Kenya
+            </span>
+
+            <span>
+                📷 @sayor.snr
+            </span>
+
+        </div>
+
+    </div>
 
 </header>
 
 
+<!-- MAIN CONTENT -->
+
 <main class="container">
 
+    <div class="grid">
 
-<!-- =========================
-     PROFILE
-========================= -->
 
-<section class="profile-card">
+        <!-- PERSONAL INFORMATION -->
 
-    <div class="profile">
+        <section class="card" id="about">
 
+            <h2>Personal Information</h2>
 
-        <!--
-        PHOTO INSTRUCTION:
-
-        Put your photo in the SAME FOLDER as index.html.
-
-        Rename your photo:
-
-        profile.jpg
-
-        Then it will automatically appear here.
-        -->
-
-        <div class="profile-photo">
-
-            <img
-                src="profile.jpg"
-                alt="Photo of Sayor Senior"
-            >
-
-        </div>
-
-
-        <div class="profile-details">
-
-            <h2>Sayor Senior</h2>
-
-            <p>
-                📍 Changamwe, Mombasa, Kenya
-            </p>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     ABOUT
-========================= -->
-
-<section
-    class="section"
-    id="about"
->
-
-    <h2>About Sayor Senior</h2>
-
-    <p class="bio">
-
-        Sayor Senior is a Kenyan individual from
-        Changamwe, Mombasa.
-
-        This website serves as a personal profile
-        containing information about his background,
-        family, interests, activities and other
-        publicly available information.
-
-    </p>
-
-</section>
-
-
-<!-- =========================
-     PERSONAL INFORMATION
-========================= -->
-
-<section
-    class="section"
-    id="personal"
->
-
-    <h2>Personal Information</h2>
-
-
-    <div class="info-grid">
-
-
-        <div class="info-item">
-
-            <strong>Full Name</strong>
-
-            <span>
-                Sayor Senior
-            </span>
-
-        </div>
-
-
-        <div class="info-item">
-
-            <strong>Place of Birth</strong>
-
-            <span>
-                Changamwe, Mombasa
-            </span>
-
-        </div>
-
-
-        <div class="info-item">
-
-            <strong>Date of Birth</strong>
-
-            <span>
-                Not provided
-            </span>
-
-        </div>
-
-
-        <div class="info-item">
-
-            <strong>Height</strong>
-
-            <span>
-                5'8"
-            </span>
-
-        </div>
-
-
-        <div class="info-item">
-
-            <strong>Weight</strong>
-
-            <span>
-                55 kg
-            </span>
-
-        </div>
-
-
-        <div class="info-item">
-
-            <strong>City</strong>
-
-            <span>
-                Mombasa
-            </span>
-
-        </div>
-
-
-        <div class="info-item">
-
-            <strong>Country</strong>
-
-            <span>
-                Kenya
-            </span>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     BIRTH
-========================= -->
-
-<section class="section">
-
-    <h2>Birth Information</h2>
-
-
-    <div class="info-grid">
-
-
-        <div class="info-item">
-
-            <strong>Date of Birth</strong>
-
-            <span>
-                Not provided
-            </span>
-
-        </div>
-
-
-        <div class="info-item">
-
-            <strong>Place of Birth</strong>
-
-            <span>
-                Changamwe, Mombasa
-            </span>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     FAMILY
-========================= -->
-
-<section
-    class="section"
-    id="family"
->
-
-    <h2>Family</h2>
-
-
-    <div class="family-grid">
-
-
-        <div class="family-member">
-
-            <div class="family-icon">
-                👨
+            <div class="info-row">
+                <div class="info-label">Full Name</div>
+                <div class="info-value">Mackdonald Dulo</div>
             </div>
 
-            <h3>Father</h3>
+            <div class="info-row">
+                <div class="info-label">Date of Birth</div>
+                <div class="info-value">26 March 2007</div>
+            </div>
 
-            <p>
+            <div class="info-row">
+                <div class="info-label">Place of Birth</div>
+                <div class="info-value">Mombasa, Kenya</div>
+            </div>
+
+            <div class="info-row">
+                <div class="info-label">Nationality</div>
+                <div class="info-value">Kenyan</div>
+            </div>
+
+            <div class="info-row">
+                <div class="info-label">Current Location</div>
+                <div class="info-value">Mombasa, Kenya</div>
+            </div>
+
+            <div class="info-row">
+                <div class="info-label">Height</div>
+                <div class="info-value">5'8" (173 cm)</div>
+            </div>
+
+            <div class="info-row">
+                <div class="info-label">Weight</div>
+                <div class="info-value">55 kg</div>
+            </div>
+
+        </section>
+
+
+        <!-- FAMILY -->
+
+        <section class="card">
+
+            <h2>Family</h2>
+
+            <div class="family-row">
+
+                <span class="family-role">
+                    Father
+                </span>
+
                 Hezekiah Dulo
-            </p>
 
-        </div>
-
-
-        <div class="family-member">
-
-            <div class="family-icon">
-                👩
             </div>
 
-            <h3>Mother</h3>
+            <div class="family-row">
 
-            <p>
+                <span class="family-role">
+                    Mother
+                </span>
+
                 Florence Linet
-            </p>
 
-        </div>
-
-
-        <div class="family-member">
-
-            <div class="family-icon">
-                👤
             </div>
 
-            <h3>Sibling</h3>
+            <div class="family-row">
 
-            <p>
+                <span class="family-role">
+                    Number of Siblings
+                </span>
+
+                1
+
+            </div>
+
+            <div class="family-row">
+
+                <span class="family-role">
+                    Sibling
+                </span>
+
                 Belin Atieno
-            </p>
 
-        </div>
-
-
-    </div>
-
-
-    <br>
-
-
-    <div class="info-item">
-
-        <strong>Number of Siblings</strong>
-
-        <span>
-            1
-        </span>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     WAVUMBUZI
-========================= -->
-
-<section
-    class="section"
-    id="wavumbuzi"
->
-
-    <h2>Wavumbuzi</h2>
-
-
-    <div class="wavumbuzi-card">
-
-        <h3>
-            Wavumbuzi
-        </h3>
-
-
-        <p>
-
-            <!--
-            PUT YOUR EXACT WAVUMBUZI INFORMATION HERE.
-
-            Example:
-
-            Sayor Senior participated in...
-            -->
-
-            Wavumbuzi information will appear here.
-
-        </p>
-
-
-        <!--
-        If you have a Wavumbuzi website/profile link,
-        replace # below with the real link.
-        -->
-
-        <a
-            class="wavumbuzi-button"
-            href="#"
-            target="_blank"
-        >
-
-            View Wavumbuzi Profile
-
-        </a>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     SOCIAL MEDIA
-========================= -->
-
-<section
-    class="section"
-    id="social"
->
-
-    <h2>Social Media</h2>
-
-
-    <div class="social-grid">
-
-
-        <!-- INSTAGRAM -->
-
-        <a
-            class="social-card"
-            href="#"
-            target="_blank"
-        >
-
-            <div class="social-icon">
-                📷
             </div>
 
-            <h3>
-                Instagram
-            </h3>
-
-            <p>
-                Add Instagram profile
-            </p>
-
-        </a>
+        </section>
 
 
-        <!-- FACEBOOK -->
+        <!-- EDUCATION -->
 
-        <a
-            class="social-card"
-            href="#"
-            target="_blank"
-        >
+        <section class="card full" id="education">
 
-            <div class="social-icon">
-                👍
+            <h2>Education</h2>
+
+            <div class="education-item">
+
+                <h3>
+                    Linet Primary School
+                </h3>
+
+                <p>
+                    Primary Education
+                </p>
+
             </div>
 
-            <h3>
-                Facebook
-            </h3>
 
-            <p>
-                Add Facebook profile
-            </p>
+            <div class="education-item">
 
-        </a>
+                <h3>
+                    Kenyatta High School
+                </h3>
 
+                <p>
+                    Secondary Education
+                </p>
 
-        <!-- X -->
-
-        <a
-            class="social-card"
-            href="#"
-            target="_blank"
-        >
-
-            <div class="social-icon">
-                𝕏
             </div>
 
-            <h3>
-                X
-            </h3>
+        </section>
+
+
+        <!-- ACHIEVEMENTS -->
+
+        <section class="card" id="achievements">
+
+            <h2>Achievements</h2>
+
+            <div class="achievement">
+
+                <h3>
+                    🏆 12th National Online Mathematics Contest
+                </h3>
+
+                <p>
+                    Mackdonald Dulo represented
+                    Kenyatta High School–Mwatate in the
+                    12th National Online Mathematics Contest.
+                </p>
+
+                <p>
+                    <strong>Score:</strong> 26 points
+                </p>
+
+                <p>
+                    <strong>Rank:</strong> 283
+                </p>
+
+                <a
+                    class="results-link"
+                    href="https://countacymathematics.co.ke/wp-content/uploads/2024/04/Results-Countacy-Mathematics-Contest-12th-CMC-R1.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    View published results →
+
+                </a>
+
+            </div>
+
+
+            <div class="achievement">
+
+                <h3>
+                    🏅 Wavumnuzi Certificate
+                </h3>
+
+                <p>
+                    Holder of a Wavumnuzi certificate.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- INTERESTS -->
+
+        <section class="card" id="interests">
+
+            <h2>Interests</h2>
+
+            <div class="interest">
+                ⚽ <strong>Football</strong>
+            </div>
 
             <p>
-                Add X profile
+                Mackdonald enjoys playing football and has
+                a strong interest in the game.
             </p>
 
-        </a>
+        </section>
 
 
-    </div>
+        <!-- SOCIAL PROFILE -->
 
-</section>
+        <section class="card full" id="contact">
 
-
-<!-- =========================
-     EDUCATION
-========================= -->
-
-<section
-    class="section"
-    id="education"
->
-
-    <h2>Education</h2>
-
-
-    <div class="timeline">
-
-
-        <div class="timeline-item">
-
-            <h3>
-                Education
-            </h3>
+            <h2>Connect With Me</h2>
 
             <p>
-                Education information will be
-                added here.
+                Follow Mackdonald Dulo on Instagram.
             </p>
 
-        </div>
+            <a
+                class="instagram"
+                href="https://www.instagram.com/sayor.snr/"
+                target="_blank"
+                rel="noopener noreferrer">
 
+                📷 Instagram — @sayor.snr
 
-    </div>
+            </a>
 
-</section>
-
-
-<!-- =========================
-     INTERESTS
-========================= -->
-
-<section class="section">
-
-    <h2>Interests</h2>
-
-
-    <div class="tags">
-
-
-        <span class="tag">
-            Technology
-        </span>
-
-
-        <span class="tag">
-            Sports
-        </span>
-
-
-        <span class="tag">
-            Innovation
-        </span>
-
-
-        <span class="tag">
-            Entertainment
-        </span>
-
+        </section>
 
     </div>
-
-</section>
-
-
-<!-- =========================
-     BACKGROUND
-========================= -->
-
-<section class="section">
-
-    <h2>Background</h2>
-
-
-    <p class="bio">
-
-        Sayor Senior was born in Changamwe,
-        Mombasa, Kenya.
-
-        Changamwe is located within Mombasa
-        County on the Kenyan coast.
-
-    </p>
-
-</section>
-
-
-<!-- =========================
-     CONTACT
-========================= -->
-
-<section class="section">
-
-    <h2>Contact</h2>
-
-
-    <div class="contact-box">
-
-        <p>
-            <strong>Name:</strong>
-            Sayor Senior
-        </p>
-
-
-        <p>
-            <strong>Location:</strong>
-            Mombasa, Kenya
-        </p>
-
-
-        <p>
-            <strong>Place of Birth:</strong>
-            Changamwe, Mombasa
-        </p>
-
-    </div>
-
-</section>
-
 
 </main>
 
 
-<!-- =========================
-     FOOTER
-========================= -->
+<!-- FOOTER -->
 
 <footer>
 
-    <h3>
-        Sayor Senior
-    </h3>
-
     <p>
-        Personal Profile & Biography
+        © 2026 <strong>Mackdonald Dulo</strong>.
+        All Rights Reserved.
     </p>
 
     <p>
-        © 2026 Sayor Senior. All rights reserved.
+        Personal Profile · Mombasa, Kenya
     </p>
 
 </footer>
-
 
 </body>
 </html>
