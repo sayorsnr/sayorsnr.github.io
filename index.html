@@ -4,23 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Mackdonald Dulo | Personal Profile</title>
+    <title>Mackdonald Dulo | Biography, Education & Achievements</title>
 
-    <meta name="description" content="Mackdonald Dulo is a Kenyan student from Mombasa with an interest in football, education and mathematics. View his biography, education, achievements and personal profile.">
+    <meta name="description"
+          content="Mackdonald Dulo is a Kenyan student from Mombasa. Learn about his biography, education, achievements, mathematics contest participation, interests and social profile.">
 
     <meta name="author" content="Mackdonald Dulo">
     <meta name="robots" content="index, follow">
 
-    <!-- Search-engine structured information -->
+    <!-- =========================
+         STRUCTURED DATA FOR GOOGLE
+         ========================= -->
+
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Person",
+
         "name": "Mackdonald Dulo",
+
         "givenName": "Mackdonald",
+
         "familyName": "Dulo",
 
-        "birthDate": "2007-03-26 (19 years)",
+        "url": "https://sayorsnr.github.io/",
+
+        "image": "https://sayorsnr.github.io/profile.jpg.webp",
+
+        "birthDate": "2007-03-26",
 
         "birthPlace": {
             "@type": "Place",
@@ -37,12 +48,10 @@
             "name": "Kenya"
         },
 
-        "image": "https://sayorsnr.github.io/profile.jpg.webp", 
-
         "alumniOf": [
             {
                 "@type": "EducationalOrganization",
-                "name": "Linet Primary School then Mombasa Primary School"
+                "name": "Linet Primary School and Mombasa Primary School"
             },
             {
                 "@type": "EducationalOrganization",
@@ -57,7 +66,7 @@
             },
             {
                 "@type": "Person",
-                "name": "Florence Linet, (Deceased)"
+                "name": "Florence Linet"
             }
         ],
 
@@ -80,6 +89,11 @@
     }
     </script>
 
+
+    <!-- =========================
+         PAGE DESIGN
+         ========================= -->
+
     <style>
 
         * {
@@ -99,17 +113,23 @@
             line-height: 1.6;
         }
 
-        /* NAVIGATION */
+
+        /* =========================
+           NAVIGATION
+           ========================= */
 
         nav {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
+
             display: flex;
             justify-content: space-between;
             align-items: center;
+
             padding: 22px 5%;
+
             z-index: 10;
         }
 
@@ -122,7 +142,7 @@
 
         .nav-links {
             display: flex;
-            gap: 28px;
+            gap: 25px;
             list-style: none;
         }
 
@@ -130,40 +150,74 @@
             color: white;
             text-decoration: none;
             font-size: 14px;
-            font-weight: 600;
+            font-weight: bold;
         }
 
         .nav-links a:hover {
             color: #3b9cff;
         }
 
-        /* HERO */
+
+        /* =========================
+           HERO
+           ========================= */
 
         .hero {
-            min-height: 600px;
-            background: #050505;
+            min-height: 650px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #050505,
+                    #161b24
+                );
+
             color: white;
+
             display: grid;
+
             grid-template-columns: 45% 55%;
+
             align-items: center;
+
             padding-top: 70px;
         }
 
+
+        /* PROFILE PHOTO */
+
         .hero-image {
-            height: 530px;
+            height: 570px;
+
             display: flex;
+
             justify-content: center;
+
             align-items: center;
-            overflow: hidden;
+
+            padding: 30px;
         }
 
         .hero-image img {
             width: 100%;
-            height: 100%;
+            max-width: 500px;
+
+            height: 510px;
+
             object-fit: cover;
+
             object-position: center;
-            filter: grayscale(100%);
+
+            border-radius: 15px;
+
+            display: block;
+
+            box-shadow:
+                0 20px 60px rgba(0,0,0,0.45);
         }
+
+
+        /* HERO TEXT */
 
         .hero-content {
             padding: 50px;
@@ -171,35 +225,49 @@
 
         .hero-small {
             color: #3194ff;
-            font-size: 15px;
+
+            font-size: 14px;
+
             font-weight: bold;
+
             letter-spacing: 2px;
+
             margin-bottom: 18px;
         }
 
         .hero h1 {
-            font-size: clamp(50px, 7vw, 90px);
+            font-size: clamp(48px, 7vw, 85px);
+
             line-height: 0.95;
+
             margin-bottom: 25px;
         }
 
         .hero-line {
-            width: 50px;
+            width: 55px;
+
             height: 4px;
+
             background: #2189ff;
+
             margin-bottom: 25px;
         }
 
         .hero-description {
             max-width: 620px;
+
             font-size: 18px;
+
             color: #d0d5dd;
+
             margin-bottom: 28px;
         }
 
         .hero-contact {
             display: flex;
-            gap: 30px;
+
+            gap: 25px;
+
             flex-wrap: wrap;
         }
 
@@ -207,25 +275,36 @@
             color: #eeeeee;
         }
 
-        /* MAIN */
+
+        /* =========================
+           MAIN CONTAINER
+           ========================= */
 
         .container {
             width: 92%;
+
             max-width: 1200px;
-            margin: 35px auto;
+
+            margin: 40px auto;
         }
 
         .grid {
             display: grid;
+
             grid-template-columns: 1fr 1fr;
+
             gap: 22px;
         }
 
         .card {
             background: white;
+
             border-radius: 16px;
+
             padding: 30px;
-            box-shadow: 0 5px 22px rgba(0,0,0,0.07);
+
+            box-shadow:
+                0 5px 22px rgba(0,0,0,0.07);
         }
 
         .card.full {
@@ -233,18 +312,27 @@
         }
 
         .card h2 {
-            font-size: 23px;
+            font-size: 24px;
+
             margin-bottom: 20px;
+
             border-bottom: 2px solid #edf0f4;
+
             padding-bottom: 12px;
         }
 
-        /* PERSONAL INFORMATION */
+
+        /* =========================
+           PERSONAL INFORMATION
+           ========================= */
 
         .info-row {
             display: grid;
+
             grid-template-columns: 45% 55%;
-            padding: 13px 0;
+
+            padding: 14px 0;
+
             border-bottom: 1px solid #edf0f4;
         }
 
@@ -254,6 +342,7 @@
 
         .info-label {
             font-weight: bold;
+
             color: #475467;
         }
 
@@ -261,10 +350,14 @@
             color: #172033;
         }
 
-        /* FAMILY */
+
+        /* =========================
+           FAMILY
+           ========================= */
 
         .family-row {
             padding: 15px 0;
+
             border-bottom: 1px solid #edf0f4;
         }
 
@@ -273,22 +366,26 @@
         }
 
         .family-role {
-            font-weight: bold;
-            color: #475467;
             display: block;
+
+            font-weight: bold;
+
+            color: #475467;
+
+            margin-bottom: 3px;
         }
 
-        /* EDUCATION */
+
+        /* =========================
+           EDUCATION
+           ========================= */
 
         .education-item {
-            position: relative;
             padding: 10px 0 20px 25px;
-            border-left: 3px solid #2189ff;
-            margin-left: 10px;
-        }
 
-        .education-item:last-child {
-            padding-bottom: 5px;
+            border-left: 3px solid #2189ff;
+
+            margin-left: 10px;
         }
 
         .education-item h3 {
@@ -299,10 +396,14 @@
             color: #667085;
         }
 
-        /* ACHIEVEMENTS */
+
+        /* =========================
+           ACHIEVEMENTS
+           ========================= */
 
         .achievement {
             padding: 20px 0;
+
             border-bottom: 1px solid #edf0f4;
         }
 
@@ -316,13 +417,19 @@
 
         .achievement p {
             color: #475467;
+
+            margin-bottom: 5px;
         }
 
         .results-link {
             display: inline-block;
+
             margin-top: 12px;
+
             color: #1769d2;
+
             font-weight: bold;
+
             text-decoration: none;
         }
 
@@ -330,22 +437,37 @@
             text-decoration: underline;
         }
 
-        /* INTERESTS */
+
+        /* =========================
+           INTERESTS
+           ========================= */
 
         .interest {
-            font-size: 20px;
+            font-size: 21px;
+
+            margin-bottom: 10px;
         }
 
-        /* INSTAGRAM */
+
+        /* =========================
+           INSTAGRAM
+           ========================= */
 
         .instagram {
             display: inline-block;
-            margin-top: 10px;
+
+            margin-top: 12px;
+
             padding: 12px 20px;
+
             background: #f3f6fa;
+
             border-radius: 10px;
+
             color: #1769d2;
+
             font-weight: bold;
+
             text-decoration: none;
         }
 
@@ -353,13 +475,20 @@
             background: #e7edf5;
         }
 
-        /* FOOTER */
+
+        /* =========================
+           FOOTER
+           ========================= */
 
         footer {
             margin-top: 50px;
+
             background: #101828;
+
             color: #98a2b3;
+
             text-align: center;
+
             padding: 30px;
         }
 
@@ -367,29 +496,44 @@
             color: white;
         }
 
-        /* MOBILE */
+
+        /* =========================
+           MOBILE
+           ========================= */
 
         @media (max-width: 800px) {
 
             nav {
                 position: relative;
+
                 background: #050505;
+
                 flex-direction: column;
+
                 gap: 15px;
             }
 
             .nav-links {
                 gap: 15px;
+
                 flex-wrap: wrap;
+
                 justify-content: center;
             }
 
             .hero {
                 grid-template-columns: 1fr;
+
                 padding-top: 0;
             }
 
             .hero-image {
+                height: auto;
+
+                padding: 35px 25px 10px;
+            }
+
+            .hero-image img {
                 height: 430px;
             }
 
@@ -411,16 +555,22 @@
 
             .info-row {
                 grid-template-columns: 1fr;
+
                 gap: 4px;
             }
         }
 
     </style>
+
 </head>
+
 
 <body>
 
-<!-- NAVIGATION -->
+
+<!-- =========================
+     NAVIGATION
+     ========================= -->
 
 <nav>
 
@@ -429,43 +579,89 @@
     </div>
 
     <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#achievements">Achievements</a></li>
-        <li><a href="#interests">Interests</a></li>
-        <li><a href="#contact">Contact</a></li>
+
+        <li>
+            <a href="#home">Home</a>
+        </li>
+
+        <li>
+            <a href="#about">About</a>
+        </li>
+
+        <li>
+            <a href="#education">Education</a>
+        </li>
+
+        <li>
+            <a href="#achievements">Achievements</a>
+        </li>
+
+        <li>
+            <a href="#family">Family</a>
+        </li>
+
+        <li>
+            <a href="#contact">Instagram</a>
+        </li>
+
     </ul>
 
 </nav>
 
-<!-- HERO -->
+
+
+<!-- =========================
+     HERO / PROFILE
+     ========================= -->
 
 <header class="hero" id="home">
 
+
+    <!-- PROFILE PHOTO -->
+
     <div class="hero-image">
 
-        <img src="profile.jpg.webp" alt="Portrait of Mackdonald Dulo">
-  
+        <img
+            src="profile.jpg.webp"
+            alt="Mackdonald Dulo"
+            width="500"
+            height="510"
+        >
+
     </div>
+
+
+    <!-- PROFILE INTRODUCTION -->
 
     <div class="hero-content">
 
         <div class="hero-small">
-            STUDENT &nbsp; • &nbsp; FOOTBALL ENTHUSIAST &nbsp; • &nbsp; DREAMER
+
+            KENYAN STUDENT
+            &nbsp; • &nbsp;
+            FOOTBALL ENTHUSIAST
+
         </div>
 
+
         <h1>
+
             Mackdonald<br>
             Dulo
+
         </h1>
+
 
         <div class="hero-line"></div>
 
+
         <p class="hero-description">
-            A dedicated student from Mombasa, Kenya with an interest
-            in education, football, mathematics and personal growth.
+
+            A student from Mombasa, Kenya with interests in
+            football, mathematics, education and personal growth.
+
         </p>
+
 
         <div class="hero-contact">
 
@@ -484,62 +680,131 @@
 </header>
 
 
-<!-- MAIN CONTENT -->
+
+<!-- =========================
+     MAIN CONTENT
+     ========================= -->
 
 <main class="container">
 
     <div class="grid">
 
 
-        <!-- PERSONAL INFORMATION -->
+        <!-- =========================
+             ABOUT / PERSONAL DETAILS
+             ========================= -->
 
         <section class="card" id="about">
 
-            <h2>Personal Information</h2>
+            <h2>
+                Personal Information
+            </h2>
+
 
             <div class="info-row">
-                <div class="info-label">Full Name</div>
-                <div class="info-value">Mackdonald Dulo</div>
+
+                <div class="info-label">
+                    Full Name
+                </div>
+
+                <div class="info-value">
+                    Mackdonald Dulo
+                </div>
+
             </div>
 
-            <div class="info-row">
-                <div class="info-label">Date of Birth</div>
-                <div class="info-value">26 March 2007 (19 years)</div>
-            </div>
 
             <div class="info-row">
-                <div class="info-label">Place of Birth</div>
-                <div class="info-value">Mombasa, Kenya</div>
+
+                <div class="info-label">
+                    Date of Birth
+                </div>
+
+                <div class="info-value">
+                    26 March 2007
+                </div>
+
             </div>
 
-            <div class="info-row">
-                <div class="info-label">Nationality</div>
-                <div class="info-value">Kenyan</div>
-            </div>
 
             <div class="info-row">
-                <div class="info-label">Current Location</div>
-                <div class="info-value">Mombasa, Kenya</div>
+
+                <div class="info-label">
+                    Place of Birth
+                </div>
+
+                <div class="info-value">
+                    Mombasa, Kenya
+                </div>
+
             </div>
 
-            <div class="info-row">
-                <div class="info-label">Height</div>
-                <div class="info-value">5'8" (173 cm)</div>
-            </div>
 
             <div class="info-row">
-                <div class="info-label">Weight</div>
-                <div class="info-value">55 kg</div>
+
+                <div class="info-label">
+                    Nationality
+                </div>
+
+                <div class="info-value">
+                    Kenyan
+                </div>
+
+            </div>
+
+
+            <div class="info-row">
+
+                <div class="info-label">
+                    Location
+                </div>
+
+                <div class="info-value">
+                    Mombasa, Kenya
+                </div>
+
+            </div>
+
+
+            <div class="info-row">
+
+                <div class="info-label">
+                    Height
+                </div>
+
+                <div class="info-value">
+                    5'8" (173 cm)
+                </div>
+
+            </div>
+
+
+            <div class="info-row">
+
+                <div class="info-label">
+                    Weight
+                </div>
+
+                <div class="info-value">
+                    55 kg
+                </div>
+
             </div>
 
         </section>
 
 
-        <!-- FAMILY -->
 
-        <section class="card">
+        <!-- =========================
+             FAMILY
+             ========================= -->
 
-            <h2>Family</h2>
+        <section class="card" id="family">
+
+            <h2>
+                Family
+            </h2>
+
 
             <div class="family-row">
 
@@ -551,6 +816,7 @@
 
             </div>
 
+
             <div class="family-row">
 
                 <span class="family-role">
@@ -561,6 +827,7 @@
 
             </div>
 
+
             <div class="family-row">
 
                 <span class="family-role">
@@ -570,6 +837,7 @@
                 1
 
             </div>
+
 
             <div class="family-row">
 
@@ -584,11 +852,17 @@
         </section>
 
 
-        <!-- EDUCATION -->
+
+        <!-- =========================
+             EDUCATION
+             ========================= -->
 
         <section class="card full" id="education">
 
-            <h2>Education</h2>
+            <h2>
+                Education
+            </h2>
+
 
             <div class="education-item">
 
@@ -620,11 +894,17 @@
         </section>
 
 
-        <!-- ACHIEVEMENTS -->
+
+        <!-- =========================
+             ACHIEVEMENTS
+             ========================= -->
 
         <section class="card" id="achievements">
 
-            <h2>Achievements</h2>
+            <h2>
+                Achievements
+            </h2>
+
 
             <div class="achievement">
 
@@ -632,27 +912,40 @@
                     🏆 12th National Online Mathematics Contest
                 </h3>
 
+
                 <p>
                     Mackdonald Dulo represented
-                    Kenyatta High School–Mwatate in the
-                    12th National Online Mathematics Contest.
+                    <strong>
+                        Kenyatta High School–Mwatate
+                    </strong>
+                    in the 12th National Online Mathematics Contest.
                 </p>
 
-                <p>
-                    <strong>Score:</strong> 26 points
-                </p>
 
                 <p>
-                    <strong>Rank:</strong> 283
+                    <strong>
+                        Score:
+                    </strong>
+                    26 points
                 </p>
+
+
+                <p>
+                    <strong>
+                        Rank:
+                    </strong>
+                    283
+                </p>
+
 
                 <a
                     class="results-link"
                     href="https://countacymathematics.co.ke/wp-content/uploads/2024/04/Results-Countacy-Mathematics-Contest-12th-CMC-R1.pdf"
                     target="_blank"
-                    rel="noopener noreferrer">
+                    rel="noopener noreferrer"
+                >
 
-                    View published results →
+                    View published contest results →
 
                 </a>
 
@@ -662,11 +955,12 @@
             <div class="achievement">
 
                 <h3>
-                    🏅 Wavumnuzi Certificate
+                    🏅 Wavumbuzi Certificate
                 </h3>
 
+
                 <p>
-                    Holder of a Wavumnuzi certificate.
+                    Holder of a Wavumbuzi certificate.
                 </p>
 
             </div>
@@ -674,39 +968,54 @@
         </section>
 
 
-        <!-- INTERESTS -->
 
-        <section class="card" id="interests">
+        <!-- =========================
+             INTERESTS
+             ========================= -->
 
-            <h2>Interests</h2>
+        <section class="card">
+
+            <h2>
+                Interests
+            </h2>
+
 
             <div class="interest">
-                ⚽ <strong>Football, Basketball</strong>
+                ⚽ <strong>Football</strong>
             </div>
 
+
             <p>
-                Mackdonald enjoys playing football and has
-                a strong interest in the game. He has played mutiple matches during his time in his primary school. He is also interested to basketball and he evens plays for his team in high school.
+                Mackdonald enjoys playing football
+                and has a strong interest in the game.
             </p>
 
         </section>
 
 
-        <!-- SOCIAL PROFILE -->
+
+        <!-- =========================
+             SOCIAL PROFILE
+             ========================= -->
 
         <section class="card full" id="contact">
 
-            <h2>Connect With Me</h2>
+            <h2>
+                Social Profile
+            </h2>
+
 
             <p>
                 Follow Mackdonald Dulo on Instagram.
             </p>
 
+
             <a
                 class="instagram"
                 href="https://www.instagram.com/sayor.snr/"
                 target="_blank"
-                rel="noopener noreferrer">
+                rel="noopener noreferrer"
+            >
 
                 📷 Instagram — @sayor.snr
 
@@ -714,25 +1023,39 @@
 
         </section>
 
+
     </div>
 
 </main>
 
 
-<!-- FOOTER -->
+
+<!-- =========================
+     FOOTER
+     ========================= -->
 
 <footer>
 
     <p>
-        © 2026 <strong>Mackdonald Dulo</strong>.
-        All Rights Reserved.
+
+        © 2026
+        <strong>
+            Mackdonald Dulo
+        </strong>
+
+        · Personal Profile
+
     </p>
 
+
     <p>
-        Personal Profile · Mombasa, Kenya
+
+        Mombasa, Kenya
+
     </p>
 
 </footer>
+
 
 </body>
 </html>
