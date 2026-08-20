@@ -1,1266 +1,530 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Mackdonald Dulo | Biography, Education, Achievements & Photos</title>
+    <title>Mackdonald Dulo | Personal Profile</title>
 
-<meta name="description"
-content="Mackdonald Dulo is a Kenyan student from Mombasa. Learn about his biography, education, achievements, interests, photos and social profile.">
+    <meta name="description" content="Mackdonald Dulo is a Kenyan scholar from Mombasa, Kenya. Learn about his education, achievements, interests, personal background and photographs.">
 
-<meta name="author" content="Mackdonald Dulo">
-<meta name="robots" content="index, follow">
+    <meta name="keywords" content="Mackdonald Dulo, Mackdonald Dulo Kenya, Mackdonald Dulo Mombasa, Mackdonald Dulo Kenyatta High School, Mackdonald Dulo Wavumbuzi">
 
-<!-- =========================
-     GOOGLE STRUCTURED DATA
-     ========================= -->
+    <meta name="author" content="Mackdonald Dulo">
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
+    <link rel="canonical" href="https://sayorsnr.github.io/">
 
-  "name": "Mackdonald Dulo",
+    <!-- Google Search / Social Preview -->
+    <meta property="og:title" content="Mackdonald Dulo | Personal Profile">
+    <meta property="og:description" content="Personal profile, education, achievements, interests and photographs of Mackdonald Dulo.">
+    <meta property="og:image" content="https://sayorsnr.github.io/profile.jpg.webp">
+    <meta property="og:url" content="https://sayorsnr.github.io/">
+    <meta property="og:type" content="profile">
 
-  "givenName": "Mackdonald",
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-  "familyName": "Dulo",
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f1f4f8;
+            color: #17233c;
+            line-height: 1.6;
+        }
 
-  "url": "https://sayorsnr.github.io/",
+        header {
+            background: linear-gradient(135deg, #111827, #334155);
+            color: white;
+            text-align: center;
+            padding: 70px 20px 60px;
+        }
 
-  "image": [
-    "https://sayorsnr.github.io/profile.jpg.webp",
-    "https://sayorsnr.github.io/mackdonald-dulo-2.jpg",
-    "https://sayorsnr.github.io/mackdonald-dulo-3.jpg",
-    "https://sayorsnr.github.io/mackdonald-dulo-football.jpg",
-    "https://sayorsnr.github.io/mackdonald-dulo-school.jpg"
-  ],
+        header h1 {
+            margin: 0;
+            font-size: 48px;
+            font-weight: 700;
+        }
 
-  "birthDate": "2007-03-26 (19 years)",
+        header p {
+            margin-top: 12px;
+            font-size: 20px;
+            color: #e5e7eb;
+        }
 
-  "birthPlace": {
-    "@type": "Place",
-    "name": "Mombasa, Kenya"
-  },
+        .profile-photo {
+            width: 190px;
+            height: 190px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 6px solid white;
+            margin-bottom: 25px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
 
-  "homeLocation": {
-    "@type": "Place",
-    "name": "Mombasa, Kenya"
-  },
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
 
-  "nationality": {
-    "@type": "Country",
-    "name": "Kenya"
-  },
+        .card {
+            background: white;
+            border-radius: 18px;
+            padding: 32px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
 
-  "alumniOf": [
+        .card h2 {
+            margin-top: 0;
+            font-size: 28px;
+            color: #13233f;
+        }
+
+        .about-text {
+            font-size: 17px;
+        }
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 18px;
+        }
+
+        .detail {
+            background: #f7f9fc;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .detail strong {
+            display: block;
+            color: #334155;
+            margin-bottom: 5px;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        .detail span {
+            font-size: 17px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 22px;
+        }
+
+        .gallery-item {
+            background: #f8fafc;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .gallery-caption {
+            padding: 14px 16px;
+            font-weight: 600;
+            color: #26364f;
+        }
+
+        .education-list {
+            padding-left: 20px;
+        }
+
+        .education-list li {
+            margin-bottom: 12px;
+        }
+
+        .social {
+            text-align: center;
+        }
+
+        .instagram {
+            display: inline-block;
+            background: #111827;
+            color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-weight: bold;
+        }
+
+        .instagram:hover {
+            background: #334155;
+        }
+
+        footer {
+            text-align: center;
+            padding: 35px 20px;
+            background: #111827;
+            color: #d1d5db;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 34px;
+            }
+
+            .profile-photo {
+                width: 150px;
+                height: 150px;
+            }
+
+            .card {
+                padding: 23px;
+            }
+        }
+    </style>
+
+    <!-- Structured Data for Google -->
+    <script type="application/ld+json">
     {
-      "@type": "EducationalOrganization",
-      "name": "Linet Primary School, Mombasa Primary School"
-    },
-    {
-      "@type": "EducationalOrganization",
-      "name": "Kenyatta High School, Mwatate"
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Mackdonald Dulo",
+        "url": "https://sayorsnr.github.io/",
+        "image": "https://sayorsnr.github.io/profile.jpg.webp",
+        "birthDate": "2007-03-26",
+        "birthPlace": {
+            "@type": "Place",
+            "name": "Mombasa, Kenya"
+        },
+        "nationality": {
+            "@type": "Country",
+            "name": "Kenya"
+        },
+        "height": "5'8\"",
+        "weight": "55 kg",
+        "sameAs": [
+            "https://www.instagram.com/sayor.snr/"
+        ],
+        "alumniOf": [
+            {
+                "@type": "EducationalOrganization",
+                "name": "Linet Primary School"
+            },
+            {
+                "@type": "EducationalOrganization",
+                "name": "Mombasa Primary School"
+            },
+            {
+                "@type": "EducationalOrganization",
+                "name": "Kenyatta High School"
+            }
+        ],
+        "knowsAbout": [
+            "Football",
+            "Mathematics"
+        ],
+        "award": "Wavumbuzi Certificate"
     }
-  ],
-
-  "parent": [
-    {
-      "@type": "Person",
-      "name": "Hezekiah Dulo"
-    },
-    {
-      "@type": "Person",
-      "name": "Florence Linet"
-    }
-  ],
-
-  "sibling": [
-    {
-      "@type": "Person",
-      "name": "Belin Dulo"
-    }
-  ],
-
-  "sameAs": [
-    "https://www.instagram.com/sayor.snr/"
-  ],
-
-  "knowsAbout": [
-    "Football",
-    "Mathematics",
-    "Education"
-  ]
-}
-</script>
-
-
-<style>
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f5f7fa;
-    color: #172033;
-    line-height: 1.6;
-}
-
-
-/* =========================
-   NAVIGATION
-   ========================= */
-
-nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 22px 5%;
-    z-index: 10;
-}
-
-.logo {
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-.nav-links {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.nav-links a:hover {
-    color: #3b9cff;
-}
-
-
-/* =========================
-   HERO
-   ========================= */
-
-.hero {
-    min-height: 650px;
-
-    background:
-        linear-gradient(
-            135deg,
-            #050505,
-            #161b24
-        );
-
-    color: white;
-
-    display: grid;
-    grid-template-columns: 45% 55%;
-
-    align-items: center;
-
-    padding-top: 70px;
-}
-
-.hero-image {
-    height: 570px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    padding: 30px;
-}
-
-.hero-image img {
-    width: 100%;
-    max-width: 500px;
-
-    height: 510px;
-
-    object-fit: cover;
-    object-position: center;
-
-    border-radius: 15px;
-
-    display: block;
-
-    box-shadow:
-        0 20px 60px rgba(0,0,0,0.45);
-}
-
-.hero-content {
-    padding: 50px;
-}
-
-.hero-small {
-    color: #3194ff;
-
-    font-size: 14px;
-    font-weight: bold;
-
-    letter-spacing: 2px;
-
-    margin-bottom: 18px;
-}
-
-.hero h1 {
-    font-size: clamp(48px, 7vw, 85px);
-
-    line-height: 0.95;
-
-    margin-bottom: 25px;
-}
-
-.hero-line {
-    width: 55px;
-    height: 4px;
-
-    background: #2189ff;
-
-    margin-bottom: 25px;
-}
-
-.hero-description {
-    max-width: 620px;
-
-    font-size: 18px;
-
-    color: #d0d5dd;
-
-    margin-bottom: 28px;
-}
-
-.hero-contact {
-    display: flex;
-    gap: 25px;
-    flex-wrap: wrap;
-}
-
-.hero-contact span {
-    color: #eeeeee;
-}
-
-
-/* =========================
-   MAIN CONTENT
-   ========================= */
-
-.container {
-    width: 92%;
-    max-width: 1200px;
-
-    margin: 40px auto;
-}
-
-.grid {
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 22px;
-}
-
-.card {
-    background: white;
-
-    border-radius: 16px;
-
-    padding: 30px;
-
-    box-shadow:
-        0 5px 22px rgba(0,0,0,0.07);
-}
-
-.card.full {
-    grid-column: 1 / -1;
-}
-
-.card h2 {
-    font-size: 24px;
-
-    margin-bottom: 20px;
-
-    border-bottom: 2px solid #edf0f4;
-
-    padding-bottom: 12px;
-}
-
-
-/* =========================
-   PERSONAL INFORMATION
-   ========================= */
-
-.info-row {
-    display: grid;
-
-    grid-template-columns: 45% 55%;
-
-    padding: 14px 0;
-
-    border-bottom: 1px solid #edf0f4;
-}
-
-.info-row:last-child {
-    border-bottom: none;
-}
-
-.info-label {
-    font-weight: bold;
-    color: #475467;
-}
-
-.info-value {
-    color: #172033;
-}
-
-
-/* =========================
-   FAMILY
-   ========================= */
-
-.family-row {
-    padding: 15px 0;
-
-    border-bottom: 1px solid #edf0f4;
-}
-
-.family-row:last-child {
-    border-bottom: none;
-}
-
-.family-role {
-    display: block;
-
-    font-weight: bold;
-
-    color: #475467;
-
-    margin-bottom: 3px;
-}
-
-
-/* =========================
-   EDUCATION
-   ========================= */
-
-.education-item {
-    padding: 10px 0 20px 25px;
-
-    border-left: 3px solid #2189ff;
-
-    margin-left: 10px;
-}
-
-.education-item h3 {
-    margin-bottom: 5px;
-}
-
-.education-item p {
-    color: #667085;
-}
-
-
-/* =========================
-   ACHIEVEMENTS
-   ========================= */
-
-.achievement {
-    padding: 20px 0;
-
-    border-bottom: 1px solid #edf0f4;
-}
-
-.achievement:last-child {
-    border-bottom: none;
-}
-
-.achievement h3 {
-    margin-bottom: 8px;
-}
-
-.achievement p {
-    color: #475467;
-
-    margin-bottom: 5px;
-}
-
-.results-link {
-    display: inline-block;
-
-    margin-top: 12px;
-
-    color: #1769d2;
-
-    font-weight: bold;
-
-    text-decoration: none;
-}
-
-.results-link:hover {
-    text-decoration: underline;
-}
-
-
-/* =========================
-   PHOTO GALLERY
-   ========================= */
-
-.gallery-intro {
-    color: #667085;
-
-    margin-bottom: 25px;
-}
-
-.photo-gallery {
-    display: grid;
-
-    grid-template-columns:
-        repeat(3, 1fr);
-
-    gap: 20px;
-}
-
-.photo-card {
-    background: #f8fafc;
-
-    border-radius: 14px;
-
-    overflow: hidden;
-
-    border: 1px solid #eaecf0;
-
-    transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease;
-}
-
-.photo-card:hover {
-    transform: translateY(-5px);
-
-    box-shadow:
-        0 12px 30px
-        rgba(0,0,0,0.12);
-}
-
-.photo-card img {
-    width: 100%;
-
-    height: 300px;
-
-    display: block;
-
-    object-fit: cover;
-}
-
-.photo-caption {
-    padding: 16px;
-}
-
-.photo-caption strong {
-    display: block;
-
-    font-size: 17px;
-
-    margin-bottom: 4px;
-}
-
-.photo-caption span {
-    color: #667085;
-
-    font-size: 14px;
-}
-
-
-/* =========================
-   INTERESTS
-   ========================= */
-
-.interest {
-    font-size: 21px;
-
-    margin-bottom: 10px;
-}
-
-
-/* =========================
-   INSTAGRAM
-   ========================= */
-
-.instagram {
-    display: inline-block;
-
-    margin-top: 12px;
-
-    padding: 12px 20px;
-
-    background: #f3f6fa;
-
-    border-radius: 10px;
-
-    color: #1769d2;
-
-    font-weight: bold;
-
-    text-decoration: none;
-}
-
-.instagram:hover {
-    background: #e7edf5;
-}
-
-
-/* =========================
-   FOOTER
-   ========================= */
-
-footer {
-    margin-top: 50px;
-
-    background: #101828;
-
-    color: #98a2b3;
-
-    text-align: center;
-
-    padding: 30px;
-}
-
-footer strong {
-    color: white;
-}
-
-
-/* =========================
-   MOBILE
-   ========================= */
-
-@media (max-width: 800px) {
-
-    nav {
-        position: relative;
-
-        background: #050505;
-
-        flex-direction: column;
-
-        gap: 15px;
-    }
-
-    .nav-links {
-        gap: 14px;
-
-        flex-wrap: wrap;
-
-        justify-content: center;
-    }
-
-    .hero {
-        grid-template-columns: 1fr;
-
-        padding-top: 0;
-    }
-
-    .hero-image {
-        height: auto;
-
-        padding: 35px 25px 10px;
-    }
-
-    .hero-image img {
-        height: 430px;
-    }
-
-    .hero-content {
-        padding: 45px 25px;
-    }
-
-    .hero h1 {
-        font-size: 58px;
-    }
-
-    .grid {
-        grid-template-columns: 1fr;
-    }
-
-    .card.full {
-        grid-column: auto;
-    }
-
-    .info-row {
-        grid-template-columns: 1fr;
-
-        gap: 4px;
-    }
-
-    .photo-gallery {
-        grid-template-columns: 1fr;
-    }
-
-    .photo-card img {
-        height: 380px;
-    }
-
-}
-
-</style>
-
+    </script>
 </head>
-
 
 <body>
 
+<header>
 
-<!-- =========================
-     NAVIGATION
-     ========================= -->
+    <img
+        class="profile-photo"
+        src="profile.jpg.webp"
+        alt="Mackdonald Dulo"
+    >
 
-<nav>
+    <h1>Mackdonald Dulo</h1>
 
-    <div class="logo">
-        MACKDONALD DULO
-    </div>
-
-    <ul class="nav-links">
-
-        <li>
-            <a href="#home">Home</a>
-        </li>
-
-        <li>
-            <a href="#about">About</a>
-        </li>
-
-        <li>
-            <a href="#education">Education</a>
-        </li>
-
-        <li>
-            <a href="#achievements">Achievements</a>
-        </li>
-
-        <li>
-            <a href="#photos">Photos</a>
-        </li>
-
-        <li>
-            <a href="#family">Family</a>
-        </li>
-
-        <li>
-            <a href="#contact">Instagram</a>
-        </li>
-
-    </ul>
-
-</nav>
-
-
-
-<!-- =========================
-     HERO
-     ========================= -->
-
-<header class="hero" id="home">
-
-    <div class="hero-image">
-
-        <img
-            src="profile.jpg.webp"
-               alt="Mackdonald Dulo"
-            width="600"
-            height="600"
-        >
-
-    </div>
-
-
-    <div class="hero-content">
-
-        <div class="hero-small">
-
-            KENYAN STUDENT
-            &nbsp; • &nbsp;
-            FOOTBALL ENTHUSIAST
-
-        </div>
-
-
-        <h1>
-
-            Mackdonald<br>
-
-            Dulo
-
-        </h1>
-
-
-        <div class="hero-line"></div>
-
-
-        <p class="hero-description">
-
-            A student from Mombasa, Kenya with interests
-            in football, mathematics, education and
-            personal growth.
-
-        </p>
-
-
-        <div class="hero-contact">
-
-            <span>
-                📍 Mombasa, Kenya
-            </span>
-
-            <span>
-                📷 @sayor.snr
-            </span>
-
-        </div>
-
-    </div>
+    <p>Kenyan Scholar • Student • Football Enthusiast</p>
 
 </header>
 
 
+<div class="container">
 
-<!-- =========================
-     MAIN CONTENT
-     ========================= -->
+    <!-- ABOUT -->
+    <section class="card">
 
-<main class="container">
+        <h2>About Mackdonald Dulo</h2>
 
-<div class="grid">
-
-
-<!-- =========================
-     PERSONAL INFORMATION
-     ========================= -->
-
-<section class="card" id="about">
-
-    <h2>
-        Personal Information
-    </h2>
-
-
-    <div class="info-row">
-
-        <div class="info-label">
-            Full Name
-        </div>
-
-        <div class="info-value">
-            Mackdonald Dulo
-        </div>
-
-    </div>
-
-
-    <div class="info-row">
-
-        <div class="info-label">
-            Date of Birth
-        </div>
-
-        <div class="info-value">
-            26 March 2007
-        </div>
-
-    </div>
-
-
-    <div class="info-row">
-
-        <div class="info-label">
-            Place of Birth
-        </div>
-
-        <div class="info-value">
-            Mombasa, Kenya
-        </div>
-
-    </div>
-
-
-    <div class="info-row">
-
-        <div class="info-label">
-            Nationality
-        </div>
-
-        <div class="info-value">
-            Kenyan
-        </div>
-
-    </div>
-
-
-    <div class="info-row">
-
-        <div class="info-label">
-            Location
-        </div>
-
-        <div class="info-value">
-            Mombasa, Kenya
-        </div>
-
-    </div>
-
-
-    <div class="info-row">
-
-        <div class="info-label">
-            Height
-        </div>
-
-        <div class="info-value">
-            5'8" (173 cm)
-        </div>
-
-    </div>
-
-
-    <div class="info-row">
-
-        <div class="info-label">
-            Weight
-        </div>
-
-        <div class="info-value">
-            55 kg
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================
-     FAMILY
-     ========================= -->
-
-<section class="card" id="family">
-
-    <h2>
-        Family
-    </h2>
-
-
-    <div class="family-row">
-
-        <span class="family-role">
-            Father
-        </span>
-
-        Hezekiah Dulo
-
-    </div>
-
-
-    <div class="family-row">
-
-        <span class="family-role">
-            Mother
-        </span>
-
-        Florence Linet
-
-    </div>
-
-
-    <div class="family-row">
-
-        <span class="family-role">
-            Number of Siblings
-        </span>
-
-        1
-
-    </div>
-
-
-    <div class="family-row">
-
-        <span class="family-role">
-            Sibling
-        </span>
-
-        Belin Atieno
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================
-     EDUCATION
-     ========================= -->
-
-<section class="card full" id="education">
-
-    <h2>
-        Education
-    </h2>
-
-
-    <div class="education-item">
-
-        <h3>
-            Linet Primary School
-        </h3>
-
-        <p>
-            Primary Education
+        <p class="about-text">
+            Mackdonald Dulo is a Kenyan scholar from Mombasa, Kenya.
+            He was born on 26 March 2007 and began his primary education
+            at Linet Primary School before continuing his education at
+            Mombasa Primary School. He later joined Kenyatta High School.
         </p>
 
-    </div>
-
-
-    <div class="education-item">
-
-        <h3>
-            Kenyatta High School
-        </h3>
-
-        <p>
-            Secondary Education
+        <p class="about-text">
+            Mackdonald has an interest in football and has also earned a
+            Wavumbuzi certificate. His profile includes information about
+            his education, achievements, personal background and interests.
         </p>
 
-    </div>
-
-</section>
+    </section>
 
 
+    <!-- PERSONAL DETAILS -->
+    <section class="card">
 
-<!-- =========================
-     ACHIEVEMENTS
-     ========================= -->
+        <h2>Personal Details</h2>
 
-<section class="card" id="achievements">
+        <div class="details-grid">
 
-    <h2>
-        Achievements
-    </h2>
+            <div class="detail">
+                <strong>Name</strong>
+                <span>Mackdonald Dulo</span>
+            </div>
+
+            <div class="detail">
+                <strong>Age</strong>
+                <span>19 years</span>
+            </div>
+
+            <div class="detail">
+                <strong>Date of Birth</strong>
+                <span>26 March 2007</span>
+            </div>
+
+            <div class="detail">
+                <strong>Place of Birth</strong>
+                <span>Mombasa, Kenya</span>
+            </div>
+
+            <div class="detail">
+                <strong>Country</strong>
+                <span>Kenya</span>
+            </div>
+
+            <div class="detail">
+                <strong>Height</strong>
+                <span>5'8"</span>
+            </div>
+
+            <div class="detail">
+                <strong>Weight</strong>
+                <span>55 kg</span>
+            </div>
+
+            <div class="detail">
+                <strong>Interest</strong>
+                <span>Playing Football</span>
+            </div>
+
+        </div>
+
+    </section>
 
 
-    <div class="achievement">
+    <!-- EDUCATION -->
+    <section class="card">
 
-        <h3>
-            🏆 12th National Online Mathematics Contest
-        </h3>
+        <h2>Education</h2>
+
+        <ul class="education-list">
+
+            <li>
+                <strong>Linet Primary School</strong>
+                — Primary education
+            </li>
+
+            <li>
+                <strong>Mombasa Primary School</strong>
+                — Primary education
+            </li>
+
+            <li>
+                <strong>Kenyatta High School</strong>
+                — Secondary education
+            </li>
+
+        </ul>
+
+    </section>
+
+
+    <!-- ACHIEVEMENTS -->
+    <section class="card">
+
+        <h2>Achievements</h2>
+
+        <div class="details-grid">
+
+            <div class="detail">
+                <strong>Certificate</strong>
+                <span>Wavumbuzi Certificate</span>
+            </div>
+
+            <div class="detail">
+                <strong>Academic Recognition</strong>
+                <span>Recognized for academic performance</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FAMILY -->
+    <section class="card">
+
+        <h2>Family</h2>
+
+        <div class="details-grid">
+
+            <div class="detail">
+                <strong>Father</strong>
+                <span>Hezekiah Dulo</span>
+            </div>
+
+            <div class="detail">
+                <strong>Mother</strong>
+                <span>Florence Linet</span>
+            </div>
+
+            <div class="detail">
+                <strong>Sibling</strong>
+                <span>Belin Dulo</span>
+            </div>
+
+            <div class="detail">
+                <strong>Number of Siblings</strong>
+                <span>1</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PHOTOS -->
+    <section class="card">
+
+        <h2>Photos</h2>
 
         <p>
-            Mackdonald Dulo represented
-            <strong>
-                Kenyatta High School–Mwatate
-            </strong>
-            in the 12th National Online Mathematics Contest.
+            A collection of photographs of Mackdonald Dulo.
         </p>
 
-        <p>
-            <strong>
-                Score:
-            </strong>
-            26 points
-        </p>
+        <div class="gallery">
 
-        <p>
-            <strong>
-                Rank:
-            </strong>
-            283
-        </p>
+            <div class="gallery-item">
+
+                <img
+                    src="profile.jpg.webp"
+                    alt="Mackdonald Dulo profile photograph"
+                    loading="eager"
+                >
+
+                <div class="gallery-caption">
+                    Mackdonald Dulo — Profile
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="mackdonald-dulo-2.jpg"
+                    alt="Mackdonald Dulo photograph"
+                    loading="lazy"
+                >
+
+                <div class="gallery-caption">
+                    Mackdonald Dulo
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="mackdonald-dulo-3.jpg"
+                    alt="Mackdonald Dulo personal photograph"
+                    loading="lazy"
+                >
+
+                <div class="gallery-caption">
+                    Mackdonald Dulo
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="mackdonald-dulo-football.jpg"
+                    alt="Mackdonald Dulo playing football"
+                    loading="lazy"
+                >
+
+                <div class="gallery-caption">
+                    Mackdonald Dulo — Football
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="mackdonald-dulo-school.jpg"
+                    alt="Mackdonald Dulo at school"
+                    loading="lazy"
+                >
+
+                <div class="gallery-caption">
+                    Mackdonald Dulo — School
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SOCIAL MEDIA -->
+    <section class="card social">
+
+        <h2>Social Media</h2>
+
+        <p>Follow Mackdonald Dulo on Instagram.</p>
 
         <a
-            class="results-link"
-            href="https://countacymathematics.co.ke/wp-content/uploads/2024/04/Results-Countacy-Mathematics-Contest-12th-CMC-R1.pdf"
+            class="instagram"
+            href="https://www.instagram.com/sayor.snr/"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener"
         >
-            View published contest results →
+            Instagram — @sayor.snr
         </a>
 
-    </div>
-
-
-    <div class="achievement">
-
-        <h3>
-            🏅 Wavumnuzi Certificate
-        </h3>
-
-        <p>
-            Holder of a Wavumnuzi certificate.
-        </p>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================
-     INTERESTS
-     ========================= -->
-
-<section class="card">
-
-    <h2>
-        Interests
-    </h2>
-
-    <div class="interest">
-        ⚽ <strong>Football</strong>
-    </div>
-
-    <p>
-        Mackdonald enjoys playing football
-        and has a strong interest in the game.
-    </p>
-
-</section>
-
-
-
-<!-- =========================
-     PHOTOS
-     ========================= -->
-
-<section class="card full" id="photos">
-
-    <h2>
-        Photos
-    </h2>
-
-    <p class="gallery-intro">
-        Photos of Mackdonald Dulo.
-    </p>
-
-
-    <div class="photo-gallery">
-
-
-        <!-- PHOTO 1 -->
-
-        <div class="photo-card">
-
-            <img
-                src="profile.jpg.webp"
-                alt="Mackdonald Dulo"
-                width="600"
-                height="600"
-            >
-
-            <div class="photo-caption">
-
-                <strong>
-                    Mackdonald Dulo
-                </strong>
-
-                <span>
-                    Profile photo
-                </span>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- PHOTO 2 -->
-
-        <div class="photo-card">
-
-            <img
-                src="mackdonald-dulo-2.jpg"
-                alt="Mackdonald Dulo"
-                width="600"
-                height="600"
-            >
-
-            <div class="photo-caption">
-
-                <strong>
-                    Mackdonald Dulo
-                </strong>
-
-                <span>
-                    Personal photograph
-                </span>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- PHOTO 3 -->
-
-        <div class="photo-card">
-
-            <img
-                src="mackdonald-dulo-3.jpg"
-                alt="Mackdonald Dulo"
-                width="600"
-                height="600"
-            >
-
-            <div class="photo-caption">
-
-                <strong>
-                    Mackdonald Dulo
-                </strong>
-
-                <span>
-                    Personal photograph
-                </span>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- FOOTBALL PHOTO -->
-
-        <div class="photo-card">
-
-            <img
-                src="mackdonald-dulo-football.jpg"
-                alt="Mackdonald Dulo playing football"
-                width="600"
-                height="600"
-            >
-
-            <div class="photo-caption">
-
-                <strong>
-                    Mackdonald Dulo
-                </strong>
-
-                <span>
-                    Football
-                </span>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- SCHOOL PHOTO -->
-
-        <div class="photo-card">
-
-            <img
-                src="mackdonald-dulo-school.jpg"
-                alt="Mackdonald Dulo at school"
-                width="600"
-                height="600"
-            >
-
-            <div class="photo-caption">
-
-                <strong>
-                    Mackdonald Dulo
-                </strong>
-
-                <span>
-                    School
-                </span>
-
-            </div>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================
-     SOCIAL PROFILE
-     ========================= -->
-
-<section class="card full" id="contact">
-
-    <h2>
-        Social Profile
-    </h2>
-
-    <p>
-        Follow Mackdonald Dulo on Instagram.
-    </p>
-
-    <a
-        class="instagram"
-        href="https://www.instagram.com/sayor.snr/"
-        target="_blank"
-        rel="noopener noreferrer"
-    >
-        📷 Instagram — @sayor.snr
-    </a>
-
-</section>
-
+    </section>
 
 </div>
 
-</main>
-
-
-
-<!-- =========================
-     FOOTER
-     ========================= -->
 
 <footer>
 
-    <p>
-        © 2026
-        <strong>
-            Mackdonald Dulo
-        </strong>
-        · Personal Profile
-    </p>
+    <p>© 2026 Mackdonald Dulo</p>
 
-    <p>
-        Mombasa, Kenya
-    </p>
+    <p>Personal Profile • Mombasa, Kenya</p>
 
 </footer>
-
 
 </body>
 </html>
